@@ -1,0 +1,14 @@
+.page-diy {
+	img {
+		width: 400px;
+	}
+}
+
+/* Helper Classes -------------------------- */
+@media ( max-width: 768px ) {
+	.page-diy {
+		img {
+			margin-top: 0px;
+		}
+	}
+}

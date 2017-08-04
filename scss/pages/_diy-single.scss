@@ -1,0 +1,154 @@
+
+.diy-page {
+	background-color: $col-color;
+	border: $border;
+}
+
+.diy-single-title {
+	margin-top: 60px;
+	h2 {
+		padding-top: 33px;
+		font-size: 43px;
+	}
+}
+
+.diy-top-boxes,
+.parts-list,
+.diy-single-text {
+	margin-left: 12px;
+	margin-right: 22px;
+}
+
+.diy-single-text {
+	padding: 10px;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+
+
+.diy-single-top-bar-wrapper {
+	margin-left: -13px;
+	margin-right: -13px;
+}
+
+.warnings,
+.required-tools,
+.torque-spec,
+.parts-list {
+	border: $border;
+	border-radius: $col-radius;
+	background-color: #efefef; 
+	p {
+		text-align: center;
+		font-size: 15px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+.warnings  {
+	background-color: yellow;
+	margin-left: 14px;
+	margin-right: 25px;
+	h2 {
+		font-size: 45px;
+	} 
+
+}
+
+#tool-list {
+	margin-top: 0px;
+}
+
+#tools {
+	ul {
+		text-align: center;
+	}
+	li {
+		padding-bottom: 5px;
+	}
+}
+
+.tool-list-content {
+	padding-bottom: 10px;
+	li {
+		padding-top: 5px;
+	}
+}
+
+.parts-list {
+	margin-top: 1px;
+	margin-left: 0px;
+	margin-right: 0px;
+	p {
+		font-size: 20px;
+	}
+}
+
+.parts-list,
+.diy-single-text {
+	p {
+		font-size: 15px;
+	}
+	img {
+		float: left;
+		margin-right: 10px;
+	}
+}
+
+.diy-single-image-gallery {
+	h2 {
+		font-size: 43px;
+	}
+	ul {
+		li {
+			a img {
+			display: block;
+			background-color: $col-color;
+			border-radius: 5px;
+			margin-bottom: 10px;
+			padding-bottom: 0px;
+			max-width: 300px;
+			}
+			p {
+				font-size: 15px;
+				text-align: center;
+				margin-bottom: 0px;
+			}
+		}
+	}
+}
+
+/* Helper Classes ------------------------ */
+@media ( max-width: 768px ) {
+	.diy-single-top-bar-wrapper {
+		margin-left: -15px;
+		margin-right: -25px;
+}
+	.diy-top-boxes,
+	.diy-single-text {
+		margin-top: 0px;
+		p {
+			font-size: 15px;
+		}
+	}
+	.warnings {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.diy-single-title {
+		h2 {
+			margin-right: 5px;
+			font-size: 37px;
+		}
+	}
+	.diy-single-text {
+		img {
+			padding-bottom: 0px;
+			float: none;
+		}
+	}
+}

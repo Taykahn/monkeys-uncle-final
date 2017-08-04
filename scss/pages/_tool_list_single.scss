@@ -1,0 +1,31 @@
+.content, 
+.tool-list {
+	background-color: #fff;
+	border: $border;
+	padding: 20px;
+	img {
+		float: left;
+	}
+	h2 {
+		text-align: left;
+		margin-top: 6px;
+	}
+	p {
+		padding: 10px;
+		font-size: 17px;
+	}
+}
+
+/* Helper Classes ------------------ */
+@media ( max-width: 769px ) {
+	.content, 
+	.tool-list {
+		img {
+			margin-top: 22px;
+		}
+		p {
+			padding: 0px;
+			font-size: 15px;
+		}
+	}
+}

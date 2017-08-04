@@ -1,0 +1,13 @@
+.search-content {
+	border-radius: $col-radius;
+	background-color:  $col-color;
+	margin-left: $col-margin-left;
+	border: $border;
+}
+
+/* Helper Classes ----------------------- */
+@media (max-width: 768px) {
+	.search-content {
+		margin-left: 0px;
+	}
+}

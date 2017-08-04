@@ -1,0 +1,30 @@
+#chassis-single {
+	margin-top: 50px;
+}
+
+.chassis-single-title {
+	h2 {
+		font-size: 43px;
+	}
+	img {
+		text-align: center;
+		display: block;
+	}
+}
+
+.chassis-content {
+	background-color: $col-color;
+	border-radius: $col-radius;
+	border: $border;
+	margin-top: -9px;
+	margin-left: 60px;
+	padding-bottom: 15px;
+}
+
+/* Helper Classes -------------------- */
+@media ( max-width: 768px ) {
+	.chassis-content {
+		margin-top: 30px;
+		margin-left: 0px;
+	}
+}

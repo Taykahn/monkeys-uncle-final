@@ -1,0 +1,49 @@
+.shop-single {
+	border-radius: $col-radius;
+	background-color:  $col-color;
+	border: $border;
+	margin-top: 55px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.shop-single-content {
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	h2 {
+		font-size: 35px;
+	}
+	p {
+		font-size: 15px;
+		text-align: center;
+	}
+	img {
+		width: 500px;
+	}
+}
+
+.image-gallery {
+	p {
+		text-align: left;
+		font-size: 15px;
+	}
+}
+
+/* Helper Classes ----------------------- */
+@media ( max-width: 768px ) {
+	.image-gallery {
+		img {
+			background-color: $col-color;
+			border-radius: 5px;
+			margin-bottom: 10px;
+			padding-bottom: 0px;
+		}
+	}
+	.shop-page {
+		margin-top: 30px;
+	}
+	.image-section {
+		padding-left: 0px;
+	}
+}

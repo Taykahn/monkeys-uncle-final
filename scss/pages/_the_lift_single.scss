@@ -1,0 +1,32 @@
+.single-lift {
+	border-radius: $col-radius;
+	background-color:  $col-color;
+	border: $border;
+	margin-top: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+		h2 {
+		font-size: 35px;
+		padding-bottom: 10px;
+	}
+		img {
+			max-width: 100%;
+			float: left;
+			margin: 10px;
+	}
+		p {
+		font-size: 16px;
+		margin-left: 10px;
+		margin-right: 5px;
+	}
+}
+
+@media ( max-width: 768px ) {
+	.single-lift {
+		margin-left: 0px;
+		margin-right: 0px;
+		img {
+			width: 200px;
+		}
+	}
+}
