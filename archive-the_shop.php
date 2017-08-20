@@ -5,10 +5,10 @@
 
 	$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 	$args = array(
-		'post_type' => 'the_shop',
+		'post_type'      => 'the_shop',
 		'posts_per_page' => 4,
-		'orderby'   => 'date',
-		'paged'     => $paged
+		'orderby'        => 'date',
+		'paged'          => $paged
 		);
 
 	$the_shop = new WP_Query( $args );

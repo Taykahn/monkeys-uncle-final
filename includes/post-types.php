@@ -32,8 +32,3 @@ $diy->mbc_build_cpt( 'diy', 'DIY', 'DIY', $supports = array(), $settings = array
 $chassis = new MBC_Theme( 'chassis' );
 
 $chassis->mbc_build_cpt( 'chassis', 'Chassis', 'Chassis', $supports = array(), $settings = array(), $has_arch = true, $hier = true);
-
-//Instantiate new class object
-$background_images = new MBC_Theme( 'background-images' );
-
-$background_images->mbc_build_cpt( 'Background Images', 'Background Images', 'Background Images', $supports = array(), $settings = array(), $has_arch = true, $hier = true);

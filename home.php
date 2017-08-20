@@ -7,9 +7,6 @@ get_header();
 
 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 $args = array(
-	'post_type'      => 'monkey_blog',
-	'posts_per_page' => 10,
-	'orderby'        => 'date',
 	'paged'          => $paged
 	);
 
@@ -51,7 +48,7 @@ $query = new WP_Query( $args );
 
 						<?php do_action( 'mbc_pagination' ) ?>
 
-					</div>
+					</div><!-- end col-md-12 options border-bottom -->
 
 					<?php wp_reset_postdata(); ?>
 
