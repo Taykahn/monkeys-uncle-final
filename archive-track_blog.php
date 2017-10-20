@@ -23,6 +23,8 @@ get_header(); ?>
 
 	<div class="container">
 
+	<div id="arrow">
+
 		<div class="track-blog row">
 
 			<div class="col-md-8 track-blog-page ">
@@ -58,6 +60,8 @@ get_header(); ?>
 		</div><!-- end row -->
 
 		<?php get_sidebar(); ?>
+
+	</div><!-- end arrow -->
 
 	</div><!-- end container -->
 

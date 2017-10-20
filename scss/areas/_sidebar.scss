@@ -2,7 +2,7 @@
 .sidebar {
 	margin-left: 43px;
 	background-color: $col-color;
-	border: $border;
+	box-shadow: $box-shadow;
 	border-radius: $col-radius;
 }
 
@@ -42,7 +42,7 @@
 .rounded {
 	font-family: bangers;
 	font-size: 34px;
-	color: #000;
+	color: $title-black;
 	text-align: center;
 }
 
@@ -64,11 +64,10 @@
 
 /* Chassis Sidebar -------- */
 #sidebar {
+	margin-top: -19px;
 	margin-left: 43px;
-	border: $border;
 	background-color: $col-color;
 	border-radius: 5px;
-	margin-top: -19px;
 	padding-bottom: 15px;
 	h2 {
 		margin-top: 0px;

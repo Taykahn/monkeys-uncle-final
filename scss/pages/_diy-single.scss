@@ -1,15 +1,24 @@
 
 .diy-page {
+	margin-top: 100px;
 	background-color: $col-color;
-	border: $border;
 }
 
 .diy-single-title {
-	margin-top: 60px;
 	h2 {
-		padding-top: 33px;
+		padding-top: 1em;
 		font-size: 43px;
 	}
+}
+
+.warnings {
+	background-color: yellow !important;
+	margin-left: 14px;
+	margin-right: 25px;
+	h2 {
+		font-size: 45px;
+	} 
+
 }
 
 .diy-top-boxes,
@@ -38,7 +47,7 @@
 .required-tools,
 .torque-spec,
 .parts-list {
-	border: $border;
+	padding: 1px;
 	border-radius: $col-radius;
 	background-color: #efefef; 
 	p {
@@ -47,16 +56,6 @@
 		padding-left: 5px;
 		padding-right: 5px;
 	}
-}
-
-.warnings  {
-	background-color: yellow;
-	margin-left: 14px;
-	margin-right: 25px;
-	h2 {
-		font-size: 45px;
-	} 
-
 }
 
 #tool-list {

@@ -1,10 +1,13 @@
+.lift-sgl-col {
+	margin-top: 100px;
+}
+
 .single-lift {
-	border-radius: $col-radius;
-	background-color:  $col-color;
-	border: $border;
 	margin-top: 50px;
 	margin-left: 20px;
 	margin-right: 20px;
+	border-radius: $col-radius;
+	background-color:  $col-color;
 		h2 {
 		font-size: 35px;
 		padding-bottom: 10px;

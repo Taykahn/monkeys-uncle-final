@@ -21,15 +21,9 @@ get_header(); ?>
 
 </div><!-- end search form -->
 
-	<div id="lift-page-explanation">
-
-		<h2>On The Lift</h2>
-
-		<p>This page is about all the different cars I have had on my lift.</p>
-
-	</div><!-- end lift-page-explanation -->
-
 	<div class="lift-page-container container">
+
+	<div id="arrow">
 
 		<div class="row">
 
@@ -63,7 +57,7 @@ get_header(); ?>
 
 						<?php do_action( 'mbc_pagination' ) ?>
 
-					</div>
+					</div><!-- end col-md-12 options border-bottom -->
 
 					<?php wp_reset_postdata(); ?>
 
@@ -76,6 +70,8 @@ get_header(); ?>
 			<?php get_sidebar(); ?>
 
 		</div><!-- end row -->
+
+	</div><!-- end arrow -->
 
 	</div><!-- end container -->
 

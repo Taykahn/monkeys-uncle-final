@@ -1,7 +1,6 @@
 .track-blog-single {
 	border-radius: $col-radius;
 	background-color:  $col-color;
-	border: $border;
 	h2 {
 		font-size: 35px;
 		padding-bottom: 10px;
@@ -23,7 +22,7 @@
 		text-align: center;
 	}
 	img {
-		float: left;
+		width: -webkit-fill-available;
 		margin-right: 20px;
 		margin-left: 20px;
 	}

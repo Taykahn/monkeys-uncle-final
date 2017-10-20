@@ -5,12 +5,19 @@
 
 get_header();
 
-$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-$args = array(
-	'paged'          => $paged
-	);
+if ( get_query_var( 'paged' ) ) { 
+	$paged = get_query_var( 'paged' ); 
+}
+elseif ( get_query_var( 'page' ) ) { 
+	$paged = get_query_var( 'page' ); 
+}
+else { 
+	$paged = 1; 
+}
 
-$query = new WP_Query( $args );
+query_posts('posts_per_page=&paged=' . $paged); 
+
+$query = new WP_Query( array( 'meta_key' => '_is_ns_featured_post', 'meta_value' => 'yes' ) );
 
 ?>
 
@@ -24,9 +31,13 @@ $query = new WP_Query( $args );
 
 	<div class="container">
 
+	<div id="arrow">
+
 		<div class="row">
 
 			<div class="blog-content col-md-8">
+
+				<?php include( 'includes/featured.php' ); ?>
 
 				<?php if ( have_posts() ) : ?>
 
@@ -60,8 +71,11 @@ $query = new WP_Query( $args );
 
 		</div><!-- end row -->
 
+	</div><!-- end arrow -->
+
 	</div><!--.container-->
+
+</section><!--#blog-->
 
 <?php get_footer() ?>
 
-</section><!--#blog-->

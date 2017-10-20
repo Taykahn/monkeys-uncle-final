@@ -23,6 +23,8 @@ get_header(); ?>
 
 	<div class="container">
 
+		<div id="arrow">
+
 		<div class="row">
 
 			<div class="shop-page col-md-8">
@@ -64,6 +66,8 @@ get_header(); ?>
 			<?php get_sidebar(); ?>
 
 		</div><!-- end row -->
+
+	</div><!-- end arrow -->
 
 	</div><!-- end container -->
 

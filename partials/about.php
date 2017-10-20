@@ -8,6 +8,8 @@
 
 	<div class="container">
 
+		<div id="arrow">
+
 		<div class="about col-md-12">
 
 			<div class="row">
@@ -27,5 +29,7 @@
 			</div><!-- end row -->
 
 		</div><!-- end about -->
+
+	</div><!-- end arrow -->
 
 	</div><!-- end container -->

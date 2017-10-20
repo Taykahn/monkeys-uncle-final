@@ -1,6 +1,7 @@
 .blog-content {
 		a {
-			color: #000;
+			color: $title-black;
+			letter-spacing: 2px;
 		}
 		h2 {
 			margin-bottom: 0px;
@@ -11,7 +12,7 @@
 		font-size: 17px;
 	}
 	img {
-		box-shadow: 5px 3px 12px #767a7b;
+		box-shadow: 0px 3px 12px #767a7b;
 		max-width: 100%;
 		text-align: left;
 		margin-top: 0px;

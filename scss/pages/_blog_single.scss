@@ -1,4 +1,7 @@
 .blog {
+	.col-md-12 {
+		margin-top: 100px;
+	}
 	h2 {
 		font-size: 40px;
 	}
@@ -11,7 +14,6 @@
 	background-color: $col-color;
 	border-radius: $col-radius;
 	margin-left: $col-margin-left;
-	border: $border;
 	h2 {
 		text-align: center;
 	}

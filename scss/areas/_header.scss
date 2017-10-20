@@ -1,3 +1,19 @@
+#scroll {
+	padding-top: 33em;
+	img {
+		padding-right: 2em;
+		padding-left: 3em;
+
+		@media ( min-width: 769 ) {
+			padding-right: 0px;
+			padding-left: 0px;
+		}
+
+		display: block;
+		margin: 0 auto;
+	}
+}
+
 .container-fluid {
 	padding-right: 0px;
 	padding-left: 0px;

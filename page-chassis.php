@@ -9,6 +9,8 @@ $chassis = new WP_Query( $args );
 
 get_header(); ?>
 
+<div id="arrow">
+
 	<div class="chassis-header">
 
 		<h2>Chassis</h2>
@@ -42,6 +44,8 @@ get_header(); ?>
 		</div><!-- end row -->
 
 	</div><!-- end container -->
+
+</div><!-- end arrow -->
 
 <?php get_footer(); ?>
 
