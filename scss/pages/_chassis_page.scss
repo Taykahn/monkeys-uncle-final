@@ -1,32 +1,63 @@
 .chassis-header {
-	background-color: $col-color;
+	margin-top: 25px;
+
+	@media ( min-width: 768px ) {
+		margin-top: 90px;
+	}
+
+	margin-bottom: 30px;
 	margin-left: 45px;
 	margin-right: 45px;
-	border-radius: $col-radius;
-	margin-top: 90px;
-	margin-bottom: 30px;
+
 	h2, p {
-		color: #000;
+		color: $black;
 		text-align: center;
 		padding-top: 7px;
 		font-family: Bangers;
 	}
+
 	h2 {
+
+		@media ( min-width: 768px ) {
+			padding-top: 40px;
+			letter-spacing: 8px;
+		}
+
+		letter-spacing: 3px;
 		font-size: 55px;
 	}
+
 	p {
 		margin-bottom: 25px;
 		font-size: 35px;
-	}
-	img {
-		text-align: center;
-		display: block;
-		width: 400px;
+
+		@media ( min-width: 768px ) {
+			letter-spacing: 4px;
+			word-spacing: 9px;
+		}
 	}
 }
 
+.banner-chassis-title {
+	background-color: $white;
+
+	@media ( min-width: 768px ) {
+		min-height: 200px;
+	}
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: $col-radius;
+}
+
 .diy-container {
-	padding-top: 0px;
+	padding-top: 5em;
+
+	@media ( min-width: 768px ) {
+		padding-top: 0px;
+	}
 }
 
 .chassis-row {
@@ -39,8 +70,9 @@
 		padding: 12px;
 		text-align: center;
 		font-size: 50px;
-		color: #000;
+		color: $black;
 	}
+
 	img {
 		margin-top: 0px;
 		display: block;
@@ -60,16 +92,20 @@
 		margin-top: 0px;
 		margin-left: 0px;
 	}
+
 	.chassis-header {
 		margin-left: 24px;
 		margin-right: 23px;
+
 		img {
 			padding: 10px;
 		}
+
 		h2 {
 			font-size: 40px;
 			margin-top: 5px;
 		}
+
 		p {
 			margin-bottom: 0px;
 			font-size: 20px;

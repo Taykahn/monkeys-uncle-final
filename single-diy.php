@@ -11,6 +11,8 @@ $post_id = $post->ID;
 
  get_header() ?>
 
+<div id="arrow">
+
 <section class="diy-page">
 
 	<?php if ( have_posts() ) : ?>
@@ -46,5 +48,7 @@ $post_id = $post->ID;
 	<?php endif ?><!-- end if loop -->
 
 </section><!-- end diy-page -->
+
+</div><!-- end arrow -->
 
 <?php get_footer(); ?>

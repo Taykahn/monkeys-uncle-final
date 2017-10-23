@@ -7,7 +7,7 @@
 }
 
 .textwidget p {
-	color: #444;
+	color: $dark-grey;
 }
 
 .widget {
@@ -16,7 +16,7 @@
 
 .widget {
 	h3 {
-	color: #888;
+	color: $med-grey;
 	}
 }
 
@@ -30,7 +30,7 @@
 
 .wu-day-current-temp,
 .wu-cond-text {
-	color: #000;
+	color: $black;
 }
 .wu-current-conditions 
 .wu-cond-text, 
@@ -48,16 +48,13 @@
 
 /* Helper Classes --------------------------- */
 @media ( max-width: 768px ) {
-	/*.sidebar {
-		margin-left: 0px;
-		margin-right: 0px;
-		margin-top: 25px;
-		margin-bottom: 20px;
-	}*/
 	.sidebar {
 		display: none;
 	}
-	.wu-wrapper .wu-search input {
+
+	.wu-wrapper
+	.wu-search
+	input {
 		padding-left: 79px;
 	}
 }
@@ -69,11 +66,13 @@
 	background-color: $col-color;
 	border-radius: 5px;
 	padding-bottom: 15px;
+
 	h2 {
 		margin-top: 0px;
 		padding-top: 10px;
 		font-size: 34px;
 	}
+
 	li {
 		font-size: 20px;
 		padding-left: 20px;
@@ -86,9 +85,11 @@
 		margin-left: 0px;
 		margin-top: 0px;
 		padding-bottom: 0px;
+
 		h2 {
 			text-align: center;
 		}
+
 		li {
 			text-align: center;
 			padding-left: 0px;

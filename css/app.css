@@ -86,6 +86,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.header-parallax {
+  height: -webkit-fill-available;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover; }
+  @media (min-width: 768px) {
+    .header-parallax {
+      height: 600px; } }
+
 .parallax {
   min-height: 600px;
   background-attachment: fixed;
@@ -273,7 +286,7 @@ ul {
   position: absolute;
   height: 2px;
   width: 50%;
-  background: #496d88;
+  background: #fafafa;
   opacity: 1;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -348,6 +361,9 @@ ul {
   left: calc(50% - 4px);
   top: 23px; }
 
+.navbar .nav-banner {
+  height: 53px; }
+
 .logo h1 {
   font-family: Bangers;
   float: left;
@@ -362,7 +378,7 @@ ul {
 .navbar-inverse .navbar-collapse {
   margin-top: -5em;
   border-color: transparent;
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(255, 255, 255, 0.89); }
 
 .navbar
 .navbar-nav {
@@ -405,7 +421,7 @@ ul {
 
 #navbar ul {
   text-align: center;
-  padding-left: 9em; }
+  padding-left: 6em; }
   #navbar ul li a:hover {
     color: #22b7dc; }
 
@@ -433,8 +449,8 @@ ul {
 @media (min-width: 768px) {
   .navbar-inverse,
   .collapse {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.89);
+    border-color: rgba(255, 255, 255, 0.89);
     margin-bottom: -53px; }
   .navbar-inverse .navbar-collapse {
     margin-top: 0px; }
@@ -468,7 +484,7 @@ ul {
   .logo h1 {
     margin-top: 10px;
     margin-left: 10px;
-    color: #496d88;
+    color: #fafafa;
     font-size: 35px;
     letter-spacing: 2px; } }
 
@@ -488,11 +504,16 @@ ul {
   padding-right: 0px;
   padding-left: 0px; }
 
+.ftr-banner {
+  width: 100%;
+  height: 100px; }
+
 .copyright p {
+  margin-top: 37px;
+  text-shadow: 0px 0px 19px #000;
   text-align: center;
   color: #000;
   font-size: 24px;
-  margin: 0px;
   font-weight: bold; }
 
 .social-icon {
@@ -551,15 +572,11 @@ ul {
 
 /* Helper Classes --------------------------- */
 @media (max-width: 768px) {
-  /*.sidebar {
-		margin-left: 0px;
-		margin-right: 0px;
-		margin-top: 25px;
-		margin-bottom: 20px;
-	}*/
   .sidebar {
     display: none; }
-  .wu-wrapper .wu-search input {
+  .wu-wrapper
+.wu-search
+input {
     padding-left: 79px; } }
 
 /* Chassis Sidebar -------- */
@@ -893,31 +910,54 @@ ul {
   margin-left: 30px; }
 
 .chassis-header {
-  background-color: rgba(255, 255, 255, 0.97);
+  margin-top: 25px;
+  margin-bottom: 30px;
   margin-left: 45px;
-  margin-right: 45px;
-  -webkit-border-radius: 5px;
-     -moz-border-radius: 5px;
-          border-radius: 5px;
-  margin-top: 90px;
-  margin-bottom: 30px; }
+  margin-right: 45px; }
+  @media (min-width: 768px) {
+    .chassis-header {
+      margin-top: 90px; } }
   .chassis-header h2, .chassis-header p {
     color: #000;
     text-align: center;
     padding-top: 7px;
     font-family: Bangers; }
   .chassis-header h2 {
+    letter-spacing: 3px;
     font-size: 55px; }
+    @media (min-width: 768px) {
+      .chassis-header h2 {
+        padding-top: 40px;
+        letter-spacing: 8px; } }
   .chassis-header p {
     margin-bottom: 25px;
     font-size: 35px; }
-  .chassis-header img {
-    text-align: center;
-    display: block;
-    width: 400px; }
+    @media (min-width: 768px) {
+      .chassis-header p {
+        letter-spacing: 4px;
+        word-spacing: 9px; } }
+
+.banner-chassis-title {
+  background-color: #fff;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px; }
+  @media (min-width: 768px) {
+    .banner-chassis-title {
+      min-height: 200px; } }
 
 .diy-container {
-  padding-top: 0px; }
+  padding-top: 5em; }
+  @media (min-width: 768px) {
+    .diy-container {
+      padding-top: 0px; } }
 
 .chassis-row {
   margin-top: -80px; }
@@ -1200,7 +1240,6 @@ ul {
   margin-left: 30px;
   border: 1px solid; }
 
-/* Helper Classes ----------------------- */
 @media (max-width: 768px) {
   .search-content {
     margin-left: 0px; } }

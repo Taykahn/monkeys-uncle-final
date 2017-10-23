@@ -7,15 +7,23 @@ $args = array( 'post_type' => 'chassis' );
 
 $chassis = new WP_Query( $args );
 
+global $post;
+
+$post_id = $post->ID;
+
 get_header(); ?>
 
 <div id="arrow">
 
 	<div class="chassis-header">
 
-		<h2>Chassis</h2>
+		<div class="banner-chassis-title" style="background-image: url( '<?php echo esc_url( the_field( 'chassis_title_img', 'option' ) ); ?>' )">
 
-		<p>Select the Chassis to see DIY repairs.</p>
+			<h2>Chassis</h2>
+
+			<p>Select the Chassis to see DIY repairs.</p>
+
+		</div>
 
 	</div><!-- end chassis-header -->
 

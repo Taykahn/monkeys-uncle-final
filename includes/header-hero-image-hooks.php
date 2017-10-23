@@ -15,25 +15,33 @@ function hero_image_section() {
 
 ?>
 
-<?php if ( is_page ( 'diy-monkey' ) | is_singular ( array ( 'chassis', 'diy' ) ) ) { ?>
+<?php if ( is_page ( 'diy-monkey' ) ) { ?>
 
-	<div class="parallax" style="background-image: url( '<?php echo esc_url( the_field( 'header_diy_image', 'option' ) ); ?>' )">
+	<div class="header-parallax" style="background-image: url( '<?php echo esc_url( the_field( 'header_diy-monkey_img', 'option' ) ); ?>' )">
+
+<?php } elseif ( is_singular ( 'chassis' ) ) { ?>
+
+	<div class="header-parallax" style="background-image: url( '<?php echo esc_url( the_field( 'header_chassis_img', 'option' ) ); ?>' )">
+
+<?php } elseif ( is_singular ( 'diy' ) ) { ?>
+
+	<div class="header-parallax" style="background-image: url( '<?php echo esc_url( the_field( 'header_diy_img', 'option' ) ); ?>' )">
 
 <?php } elseif ( is_page ( 'on-the-lift' ) ) { ?>
 
-	<div class="parallax" style="background-image: url( '<?php echo esc_url( the_field( 'header_lift_image', 'option' ) ); ?>' )">
+	<div class="header-parallax" style="background-image: url( '<?php echo esc_url( the_field( 'header_lift_img', 'option' ) ); ?>' )">
 
 <?php } elseif ( is_post_type_archive ( 'the_shop' ) ) { ?>
 
-	<div class="parallax" style="background-image: url( '<?php echo esc_url( the_field( 'header_shop_image', 'option' ) ); ?>' )">
+	<div class="header-parallax" style="background-image: url( '<?php echo esc_url( the_field( 'header_shop_img', 'option' ) ); ?>' )">
 
 <?php } elseif ( is_post_type_archive ( 'track_blog' ) ) { ?>
 
-	<div class="parallax" style="background-image: url( '<?php echo esc_url( the_field( 'header_track_image', 'option' ) ); ?>' )">
+	<div class="header-parallax" style="background-image: url( '<?php echo esc_url( the_field( 'header_track_img', 'option' ) ); ?>' )">
 
 <?php } else { ?>
 
-	<div class="parallax" style="background-image: url( '<?php echo esc_url( the_field( 'header_home_image', 'option' ) ); ?>' )">
+	<div class="header-parallax" style="background-image: url( '<?php echo esc_url( the_field( 'header_home_img', 'option' ) ); ?>' )">
 
 <?php }
 

@@ -15,6 +15,7 @@
 	background-color: yellow !important;
 	margin-left: 14px;
 	margin-right: 25px;
+
 	h2 {
 		font-size: 45px;
 	} 
@@ -49,7 +50,8 @@
 .parts-list {
 	padding: 1px;
 	border-radius: $col-radius;
-	background-color: #efefef; 
+	background-color: $light-grey; 
+
 	p {
 		text-align: center;
 		font-size: 15px;
@@ -66,6 +68,7 @@
 	ul {
 		text-align: center;
 	}
+
 	li {
 		padding-bottom: 5px;
 	}
@@ -73,6 +76,7 @@
 
 .tool-list-content {
 	padding-bottom: 10px;
+
 	li {
 		padding-top: 5px;
 	}
@@ -82,6 +86,7 @@
 	margin-top: 1px;
 	margin-left: 0px;
 	margin-right: 0px;
+
 	p {
 		font-size: 20px;
 	}
@@ -92,6 +97,7 @@
 	p {
 		font-size: 15px;
 	}
+
 	img {
 		float: left;
 		margin-right: 10px;
@@ -102,6 +108,7 @@
 	h2 {
 		font-size: 43px;
 	}
+
 	ul {
 		li {
 			a img {
@@ -112,6 +119,7 @@
 			padding-bottom: 0px;
 			max-width: 300px;
 			}
+
 			p {
 				font-size: 15px;
 				text-align: center;
@@ -130,20 +138,24 @@
 	.diy-top-boxes,
 	.diy-single-text {
 		margin-top: 0px;
+
 		p {
 			font-size: 15px;
 		}
 	}
+
 	.warnings {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
+
 	.diy-single-title {
 		h2 {
 			margin-right: 5px;
 			font-size: 37px;
 		}
 	}
+
 	.diy-single-text {
 		img {
 			padding-bottom: 0px;

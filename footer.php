@@ -8,6 +8,8 @@
 
 	<footer>
 
+		<div class="ftr-banner" style="background-image: url( '<?php the_field( 'footer_img', 'option' ); ?>' )">
+
 		<div class="container">
 
 			<div class="copyright">

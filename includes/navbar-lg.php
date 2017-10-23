@@ -2,6 +2,8 @@
 
 	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="600">
 
+		<div class="nav-banner" style="background-image: url( '<?php the_field( 'nav_bkgd_img', 'option' ); ?>' )">
+
 		<div class="navbar-header">
 
 			<div class="navbar-brand logo">
