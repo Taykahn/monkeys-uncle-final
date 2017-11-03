@@ -1,8 +1,17 @@
 .track-blog-page {
+	@media ( min-width: 1025px ) {
+		padding: 30px;
+	}
+
 	h2 {
 		padding-top: 10px;
-		padding-top: 7px;
-		font-size: 43px;
+		font-size: 28px;
+
+		@media ( min-width: 1024px ) {
+			font-size: 30px;
+			letter-spacing: 2px;
+		}
+
 		margin-bottom: 10px;
 		text-align: left;
 	}
@@ -15,8 +24,9 @@
 }
 
 .track-blog-page {
-	margin-left: 25px;
-	margin-right: 10px;
+	@media ( min-width: 768px ) {
+		padding: 40px;
+	}
 
 	p {
 		font-size: 18px;
@@ -24,7 +34,7 @@
 }
 
 .page-header {
-	margin-bottom: 0px;
+	margin: 0px;
 }
 
 /* Helper Classes ------------------- */
@@ -38,9 +48,6 @@
 	}
 
 	.track-blog-page {
-		margin-left: 0px;
-		margin-right: 0px;
-
 		p {
 			font-size: 15px;
 			padding-bottom: 10px;

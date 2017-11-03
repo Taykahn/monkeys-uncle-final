@@ -1,14 +1,72 @@
 .search-form {
-		margin-top: 1em;
-		margin-right: 15px;
-		margin-left: 15px;
-		text-align: center;
-		border-radius: $col-radius;
-		background-color: $col-color;
+	margin-top: 70px;
+
+	@media ( min-width: 568px ) {
+		margin-top: 42px;
 	}
 
-@media ( min-width: 768px ) {
-	.search-form {
-		display: none;
+	@media ( min-width: 768px ) {
+		margin-top: 20px;
+		margin: initial;
 	}
+
+	form {
+		height: 0px;
+	}
+
+	label, input {
+		background-color: $col-color;
+		border-radius: 5px;
+
+		@media ( min-width: 1024px ) {
+			border-radius: 6px;
+			line-height: 14px;
+		}
+
+		color: $white-ish;
+	}
+
+	@media ( min-width: 768px ) {
+		margin-top: 18px;
+		margin-right: 40px;
+		margin-left: 54em;
+		text-align: center;
+		font-size: 10px;
+
+		@media ( min-width: 1024px ) {
+			margin-top: 21px;
+			margin-right: 26px;
+			text-align: right;
+		}
+	}
+}
+
+#s {
+	width: 71%;
+
+	@media ( min-width: 768px ) {
+		width: 75%;
+	}
+
+	@media ( min-width: 1024px ) {
+		width: 30%;
+	}
+
+	@media ( min-width: 1300px ) {
+		width: 16%
+	}
+}
+
+#searchsubmit, #s {
+	font-size: 10px;
+
+	@media ( min-width: 1024px ) {
+		font-size: 14px;
+	}
+
+	color: $black;
+}
+
+#searchsubmit:hover {
+	color: $light-blue;
 }

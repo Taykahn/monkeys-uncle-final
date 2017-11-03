@@ -4,35 +4,53 @@
  */
 
  get_header(); ?>
- 
-	<section class="blog">
 
-		<div class="col-md-12">
+<section id="blog">
 
-			<div class="row">
+<div id="arrow"></div>
 
-				<?php while ( have_posts()) : the_post(); ?>
+	<div class="container single-container">
 
-					<div class="blog-single col-md-8">
+		<div class="col-md-8 single-col">
 
-						<h2><?php the_title(); ?></h2>
+			<div class="blog-content">
 
-						<?php the_post_thumbnail(); ?>
+				<?php include( 'includes/featured.php' ); ?>
+
+				<?php if ( have_posts() ) : ?>
+
+					<?php while ( have_posts() ) : the_post() ?>
+
+						<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+
+						<h5>Author: <?php the_author(); ?> | Posted on: <?php the_date(); ?></h5>
+
+						<h5>Categories: <?php the_category(); ?></h5>
+
+						<p><?php the_post_thumbnail(); ?></p>
 
 						<p><?php the_content(); ?></p>
 
-						<?php wp_reset_postdata(); ?>
+					<?php endwhile ?>
 
-					</div><!-- end col-md-8 -->
+					<div class="options border-bottom">
 
-				<?php endwhile ?>
+						<?php do_action( 'mbc_pagination' ) ?>
 
-				<?php get_sidebar(); ?>
+					</div><!-- end options border-bottom -->
 
-			</div><!-- end row -->
+					<?php wp_reset_postdata(); ?>
 
-		</div><!-- end col-md-12 -->
+				<?php endif ?>
 
-	</section><!-- end blog -->
+			</div><!--.content-->
+
+		</div><!-- end col-md-8 -->
+
+		<?php get_sidebar() ?>
+
+	</div><!--.container-->
+
+</section><!--#blog-->
 
 <?php get_footer(); ?>

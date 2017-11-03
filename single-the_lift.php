@@ -5,6 +5,8 @@
 
 get_header() ?>
 
+<div id="arrow"></div>
+
 	<section class="two-column row no-max pad">
 
 		<div class="col-md-12 lift-sgl-col">

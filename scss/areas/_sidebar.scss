@@ -1,9 +1,20 @@
-
 .sidebar {
-	margin-left: 43px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	background-color: $col-color;
 	box-shadow: $box-shadow;
 	border-radius: $col-radius;
+
+	@media ( min-width: 1025px ) {
+		margin: 50px 24px 24px 24px;
+	}
+}
+
+#primary-sidebar {
+	padding: 15px;
+	input, label {
+		font-size: 12px;
+	}
 }
 
 .textwidget p {
@@ -40,14 +51,15 @@
 } 
 
 .rounded {
+	margin-top: 10px !important;
 	font-family: bangers;
-	font-size: 34px;
+	font-size: 20px !important;
 	color: $title-black;
 	text-align: center;
 }
 
 /* Helper Classes --------------------------- */
-@media ( max-width: 768px ) {
+@media ( max-width: 769px ) {
 	.sidebar {
 		display: none;
 	}
@@ -60,18 +72,24 @@
 }
 
 /* Chassis Sidebar -------- */
+#sidebar-widget {
+	margin-left: 64px;
+}
+
 #sidebar {
-	margin-top: -19px;
-	margin-left: 43px;
 	background-color: $col-color;
 	border-radius: 5px;
-	padding-bottom: 15px;
+	margin-bottom: 30px;
+	padding-bottom: 40px;
 
 	h2 {
 		margin-top: 0px;
-		padding-top: 10px;
-		font-size: 34px;
+		padding-top: 40px;
 	}
+
+.tool-list ol {
+	padding-top: 5px;
+}
 
 	li {
 		font-size: 20px;
@@ -83,8 +101,6 @@
 @media ( max-width: 768px ) {
 	#sidebar {
 		margin-left: 0px;
-		margin-top: 0px;
-		padding-bottom: 0px;
 
 		h2 {
 			text-align: center;

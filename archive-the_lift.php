@@ -3,10 +3,10 @@
  * The Lift
  */
 
-	$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+	get_query_var('page') ? get_query_var('page') : 1;
+
 	$args = array(
 		'post_type' => 'the_lift',
-		'posts_per_page' => 10,
 		'orderby'   => 'date',
 		'paged'     => $paged
 		);
@@ -15,21 +15,15 @@
 
 get_header(); ?>
 
-<div class="search-form">
-
-	<?php get_search_form(); ?>
-
-</div><!-- end search form -->
-
-	<div class="lift-page-container container">
+	<div class="container">
 
 	<div id="arrow">
 
-		<div class="row">
+			<div class="col-md-8">
 
-			<div class="col-md-8 lift-page">
+				<div class="lift-page-title">
 
-				<div class="page-header lift-page-title">
+					<?php if ( $the_lift->have_posts() ) : ?>
 
 					<?php while ( $the_lift->have_posts() ) : $the_lift->the_post(); ?>
 
@@ -41,35 +35,25 @@ get_header(); ?>
 
 						<div class="lift-page-image">
 
-							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a><hr>
 
 						</div><!-- end lift-page-image -->
 
-						<div class="lift-page-content">
+					<?php endwhile; ?>
 
-						<!-- the_content(); -->
+				<?php endif; ?>
 
-						</div><!-- end lift-page-content -->
-
-					<?php endwhile; // end of the loop. ?>
-
-					<div class="col-md-12 options border-bottom">
+					<div class="options border-bottom">
 
 						<?php do_action( 'mbc_pagination' ) ?>
 
-					</div><!-- end col-md-12 options border-bottom -->
-
-					<?php wp_reset_postdata(); ?>
-
-					<?php get_post(); ?>
+					</div><!-- end options border-bottom -->
 
 				</div><!-- end page-header -->
 
 			</div><!-- col-md-8 -->
 
 			<?php get_sidebar(); ?>
-
-		</div><!-- end row -->
 
 	</div><!-- end arrow -->
 

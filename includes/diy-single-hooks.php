@@ -27,7 +27,7 @@ function warning_section() {
 
 			</div><!-- end warnings -->
 
-		</div><!-- end col-md-4 -->
+		</div><!-- end row -->
 
 	</section><!-- end col-md-12 -->
 
@@ -51,13 +51,13 @@ function pl_ts_rt_section() {
 
 	<section class="three-column row no-max pad">
 
-		<div class="col-md-12">
+		<div class="col-sm-12 col-md-12 pl-ts-rt-col">
 
 			<div class="row diy-top-boxes">
 
 				<div class="diy-single-top-bar-wrapper">
 
-					<div class="col-md-4">
+					<div class="col-sm-4 col-md-4">
 
 						<div class="parts-list">
 
@@ -69,7 +69,7 @@ function pl_ts_rt_section() {
 
 					</div><!-- end col-md-4 -->
 
-					<div class="col-md-4">
+					<div class="col-sm-4 col-md-4">
 
 						<div class="torque-spec">
 
@@ -81,7 +81,7 @@ function pl_ts_rt_section() {
 
 					</div><!-- end col-md-4 -->
 
-					<div class="col-md-4">
+					<div class="col-sm-4 col-md-4">
 
 						<div class="required-tools">
 
@@ -157,17 +157,13 @@ function image_gallery_section() {
 
 ?>
 
-	<section class="one-column row no-max pad">
+	<section class="one-column row img-gallery">
 
-		<div class="col-md-12">
+		<div class="container">
 
-			<div class="row">
+				<h2><?php the_field('gallery_title'); ?></h2>
 
-				<div class="col-md-12 diy-single-image-gallery">
-
-					<div class="diy-single-image-gallery row">
-
-						<h2><?php the_field('gallery_title'); ?></h2>
+				<div class="diy-single-image-gallery">
 
 						<?php $images = get_field('image_gallery'); ?>
 
@@ -201,11 +197,7 @@ function image_gallery_section() {
 
 					</div><!-- end diy-single-image-gallery -->
 
-				</div><!-- end col-md-12 diy-single-image-gallery -->
-
-			</div><!-- end row -->
-
-		</div><!-- end col-md-12 -->
+		</div><!-- end container -->
 
 	</section><!-- end one-column -->
 

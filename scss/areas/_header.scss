@@ -1,10 +1,32 @@
 #scroll {
 	padding-top: 33em;
+
+	@media ( min-width: 375px ) {
+		padding-top: 38em;
+	}
+
+	@media ( min-width: 414px ) {
+		padding-top: 42em;
+	}
+
+	@media ( min-width: 568px ) {
+		padding-top: 16em;
+	}
+
+	@media ( min-width: 768px ) {
+		padding-top: 62em;
+	}
+
+	@media ( min-width: 1024px ) {
+		padding-top: 30em;
+	}
+
 	img {
+		width: initial;
 		padding-right: 2em;
 		padding-left: 3em;
 
-		@media ( min-width: 769 ) {
+		@media ( min-width: 768px ) {
 			padding-right: 0px;
 			padding-left: 0px;
 		}

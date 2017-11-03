@@ -11,7 +11,7 @@
 	width: 45px;
 	height: 45px;
 	position: relative;
-	margin: 12px;
+	margin: 14px;
 	-webkit-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
 	-o-transform: rotate(0deg);
@@ -108,18 +108,47 @@
 
 .navbar {
 	.nav-banner {
-		height: 53px;
+		height: 100px;
+
+		@media ( max-width: 736px ) {
+			display: initial;
+		}
+
+		@media ( min-width: 1024px ) {
+			height: 100px;
+		}
 	}
 }
 
 .logo {
 	h1 {
-		font-family: Bangers;
-		float: left;
-		color: $black;
-		font-size: 47px;
 		margin-top: 3px;
-		margin-left: 10px;
+		font-family: Bangers;
+		text-transform: uppercase;
+		float: left;
+		color: $white-ish;
+		font-size: 47px;
+
+		@media ( min-width: 768px ) {
+			margin-top: 30px;
+			padding-left: 41px;
+			font-size: 35px;
+		}
+	}
+
+	h1:hover {
+		color: $light-blue;
+	}
+}
+
+.navbar-inverse .navbar-collapse {
+	margin-top: -6em;
+	background-color: rgba(60, 60, 60, 0.86);
+	border-color: transparent;
+
+	@media ( min-width: 768px ) {
+		border-color: $black;
+		background-color: transparent;
 	}
 }
 
@@ -127,17 +156,30 @@
 	overflow-y: visible;
 }
 
-.navbar-inverse .navbar-collapse {
-	margin-top: -5em;
-	border-color: transparent;
-	background-color: $white-transparent;
+.navbar-fixed-top .navbar-collapse, {
+	max-height: inherit;
+	height: -webkit-fill-available;
+
+	@media ( min-width: 568px ) {
+		height: initial;
+	}
+
+	width: 60%;
+
+	@media ( min-width: 768px ) {
+		width: initial;
+	}
+
 }
 
 .navbar
 .navbar-nav {
-	display: inline-block;
-	float: right;
-	margin-right: 35px;
+	@media ( min-width: 768px ) {
+		margin-right: 0px;
+		padding-top: 30px;
+		padding-right: 32px;
+		float: right;
+	}
 }
 
 .navbar-collapse {
@@ -156,13 +198,22 @@
 .navbar-inverse 
 .navbar-nav > li > a {
 	color: $white-ish;
-	font-size: 40px;
+
+	@media ( min-width: 1024px ) {
+		font-size: 40px;
+	}
+
 	color: $white;
 	display: inline-block;
 }
+
 .navbar-nav > li > a {
 	padding-top: 11px;
 	padding-bottom: 7px;
+
+	@media ( min-width: 568px ) {
+		padding-bottom: 4px;
+	}
 }
 .sub-menu li {
 	margin-bottom: 10px;
@@ -180,24 +231,46 @@
 
 #navbar {
 	ul {
-		text-align: center;
-		padding-left: 6em;
+
+		@media ( min-width: 1024px ) {
+			padding-right: 15px;
+		}
+
 		li {
 			a:hover {
-				color: $light-blue;
+			color: $light-blue;
 			}
 		}
 	}
 }
 
 #navbar ul li a {
-	color: $grey-green;
-	letter-spacing: 4px;
-	font-size: 18px;
+	letter-spacing: 2px;
+	color: $light-grey;
 	font-family: Bangers;
+
+	@media ( min-width: 768px ) {
+		padding-left: 10px;
+		padding-right: 10px;
+		letter-spacing: 1px;
+		font-size: 14px;
+	}
+
+	@media ( min-width: 1200px ) {
+		letter-spacing: 4px;
+		font-size: 18px;
+	}
 }
 
 .navbar-inverse {
+	@media ( min-width: 768px ) {
+		margin-top: 6em;
+	}
+
+	@media ( min-width: 1024px ) {
+		margin-top: 0px;
+	}
+
 	background-color: transparent;
 	border-color: transparent;
 }
@@ -217,16 +290,14 @@
 }
 
 /* Helper Classes ------------------------ */
-@media ( min-width: 768px ) {
+@media ( min-width: 1024px ) {
 	.navbar-inverse, 
 	.collapse{
-		background-color: $white-transparent;
-		border-color: $white-transparent;
-		margin-bottom: -53px;
+		margin-bottom: -100px;
 	}
 
 .navbar-inverse .navbar-collapse {
-	margin-top: 0px;
+	margin-top: -1px;
 }
 
 	.large-navbar {
@@ -237,27 +308,29 @@
 		display: none;
 	}
 
-	.navbar
-	.navbar-nav {
-		margin-top: 7px;
-		float: right;
-	}
-
 	.logo {
 		h1 {
-			color: $grey-green;
+			z-index: 1000;
+			padding-left: 43px;
+			color: $light-grey;
 			font-size: 42px;
 			letter-spacing: 5px
 		}
 	}
 }
 
-@media (max-width:767px) {
+@media ( min-width: 768px ) {
 	.navbar
 	.navbar-nav {
+		padding-top: 33px;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar
+	.navbar-nav {
+		margin-top: 3em;
 		float: none;
-		margin-right: 0px;
-		margin-left: 0px;
 	}
 
 	.sub-menu {
@@ -275,9 +348,9 @@
 	.logo {
 		h1 {
 			margin-top: 10px;
-			margin-left: 10px;
+			margin-left: 17px;
 			color: $off-white;
-			font-size: 35px;
+			font-size: 23px;
 			letter-spacing: 2px;
 		}
 	}

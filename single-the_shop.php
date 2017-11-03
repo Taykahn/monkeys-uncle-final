@@ -5,42 +5,46 @@
 
 get_header() ?>
 
-	<div class="container">
+<div id="arrow"></div>
 
-		<div class="col-md-12">
+	<div class="container sgl-shop-container">
 
-			<div class="shop-single row">
+		<div class="shop-single row">
 
-				<?php if (have_posts() ) : ?>
+			<?php if (have_posts() ) : ?>
 
-					<?php while ( have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-						<div class="shop-single-content">
+					<div class="shop-single-content">
 
-							<h2><?php the_title(); ?></h2>
+						<h2><?php the_title(); ?></h2>
 
-							<?php the_post_thumbnail(); ?>
+						<h5>Author: <?php the_author(); ?> | Posted on: <?php the_date(); ?></h5>
 
-							<p><?php the_content(); ?></p>
+						<h5>Categories: <?php the_category(); ?></h5>
 
-						</div><!-- end shop-single-content -->
+						<?php the_post_thumbnail(); ?>
 
-						<section class="image-section col-md-12">
+						<p><?php the_content(); ?></p>
 
-							<div class="image-gallery">
+					</div><!-- end shop-single-content -->
 
-								<?php include( 'partials/ig-shop.php' ); ?>
+					<section class="image-section col-md-12">
 
-							</div><!-- end image-gallery -->
+						<div class="image-gallery">
 
-						</section><!-- col-md-12 -->
+							<?php include( 'partials/ig-shop.php' ); ?>
 
-					<?php endwhile; ?>
+						</div><!-- end image-gallery -->
 
-				<?php endif; ?>
+					</section><!-- col-md-12 -->
 
-			</div><!-- end shop-single -->
+				<?php endwhile; ?>
 
-		</div><!-- end row -->
+			<?php endif; ?>
+
+		</div><!-- end shop-single row -->
+
+	</div><!-- end container -->
 
 <?php get_footer(); ?>

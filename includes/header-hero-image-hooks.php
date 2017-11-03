@@ -27,7 +27,7 @@ function hero_image_section() {
 
 	<div class="header-parallax" style="background-image: url( '<?php echo esc_url( the_field( 'header_diy_img', 'option' ) ); ?>' )">
 
-<?php } elseif ( is_page ( 'on-the-lift' ) ) { ?>
+<?php } elseif ( is_post_type_archive ( 'the_lift' ) ) { ?>
 
 	<div class="header-parallax" style="background-image: url( '<?php echo esc_url( the_field( 'header_lift_img', 'option' ) ); ?>' )">
 

@@ -1,17 +1,34 @@
-.about {
-	background-color: $col-color;
-	border-radius: 5px;
-	margin-top: 40px;
+.about-container {
+	.col-md-12 {
+		padding: 0px;
+	}
 
-	h2 {
-		font-size: 55px;
+	padding: 0px;
+	border-radius: $col-radius;
+
+	@media ( min-width: 768px ) {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	@media ( min-width: 1024px ) {
+		margin-top: 150px;
+	}
+}
+
+.about-content {
+	background-color: $col-color;
+	padding: 10px;
+
+	@media ( min-width: 768px ) {
+		padding: 50px;
 	}
 
 		p {
+		margin: 0px;
+		line-height: 30px;
 		color: $black;
-		font-family: -webkit-pictograph;
-		padding-left: 20px;
-		padding-right: 20px;
-		font-size: 18px;
 	}
 }

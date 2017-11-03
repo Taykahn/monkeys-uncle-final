@@ -19,17 +19,17 @@ get_header() ?>
 
 <section id="diy-archive" class="container">
 
-	<div id="arrow">
+	<div id="arrow"></div><!-- end arrow -->
 
 	<div class="row">
 
-		<article class="content col-md-8">
+		<article class="col-md-8">
 
 			<?php if ( $diy->have_posts() ) : ?>
 
 				<?php while ( $diy->have_posts() ) : $diy->the_post(); ?>
 
-					<a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+					<h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
 
 				<?php endwhile ?>
 
@@ -44,8 +44,6 @@ get_header() ?>
 		</aside>
 
 	</div><!--.row-->
-
-</div><!-- end arrow -->
 
 </section><!--.container-->
 

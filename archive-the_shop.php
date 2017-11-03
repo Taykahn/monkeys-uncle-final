@@ -5,33 +5,24 @@
 
 	$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 	$args = array(
-		'post_type'      => 'the_shop',
-		'posts_per_page' => 4,
-		'orderby'        => 'date',
-		'paged'          => $paged
+		'post_type' => 'the_shop',
+		'orderby'   => 'date',
+		'paged'     => $paged
 		);
 
 	$the_shop = new WP_Query( $args );
 
 get_header(); ?>
 
-<div class="search-form">
-
-	<?php get_search_form(); ?>
-
-</div><!-- end search form -->
-
-	<div class="container">
+	<div class="container shop-container">
 
 		<div id="arrow">
 
-		<div class="row">
-
 			<div class="shop-page col-md-8">
 
-				<div class="page-header">
+				<?php while ( $the_shop->have_posts() ) : $the_shop->the_post(); ?>
 
-					<?php while ( $the_shop->have_posts() ) : $the_shop->the_post(); ?>
+					<div class="page-header">
 
 						<a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
 
@@ -39,33 +30,37 @@ get_header(); ?>
 
 						<h5>Categories: <?php the_category(); ?></h5>
 
+					</div><!-- end page-header -->
+
 						<div class="shop-page-image-content">
 
 							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 
-							<p><?php the_content(); ?></p><hr>
+							<p><?php the_excerpt(); ?></p>
+
+							<div class="blog-read-more-button">
+
+								<a href="<?php the_permalink() ?>" class="blog-read-more-btn">read more</a>
+
+							</div><!-- end blog-read-more-button --><hr>
 
 						</div><!-- end lift-page-image -->
 
 					<?php endwhile; // end of the loop. ?>
 
-					<div class="col-md-12 options border-bottom">
+					<div class="options border-bottom">
 
 						<?php do_action( 'mbc_pagination' ) ?>
 
-					</div>
+					</div><!-- end options border-bottom -->
 
 					<?php wp_reset_postdata() ?>
 
 					<?php get_post(); ?>
 
-				</div><!-- end page-header -->
-
 			</div><!-- col-md-8 -->
 
 			<?php get_sidebar(); ?>
-
-		</div><!-- end row -->
 
 	</div><!-- end arrow -->
 

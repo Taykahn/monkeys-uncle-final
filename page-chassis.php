@@ -13,7 +13,7 @@ $post_id = $post->ID;
 
 get_header(); ?>
 
-<div id="arrow">
+<div id="arrow"></div>
 
 	<div class="chassis-header">
 
@@ -27,15 +27,15 @@ get_header(); ?>
 
 	</div><!-- end chassis-header -->
 
-	<div class="diy-container container">
+	<div class="container diy-pg-container">
 
-		<div class="row chassis-row">
+			<div class="col-md-8">
 
-			<div class="col-md-8 page-diy">
+				<div class="diy-page">
 
 				<?php while ( $chassis->have_posts() ) : $chassis->the_post(); ?>
 
-					<a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
+					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
 					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 
@@ -45,15 +45,13 @@ get_header(); ?>
 
 				<?php get_post(); ?>
 
+			</div><!-- end chassis-pg-content -->
+
 			</div><!-- col-md-8 page-diy -->
 
 			<?php get_sidebar(); ?>
 
-		</div><!-- end row -->
-
 	</div><!-- end container -->
-
-</div><!-- end arrow -->
 
 <?php get_footer(); ?>
 

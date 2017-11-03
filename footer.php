@@ -8,17 +8,31 @@
 
 	<footer>
 
-		<div class="ftr-banner" style="background-image: url( '<?php the_field( 'footer_img', 'option' ); ?>' )">
+		<div class="nav-banner" style="background-image: url( '<?php the_field( 'footer_bkgd_img', 'option' ); ?>' )">
 
-		<div class="container">
+		<section class="section-1 container-fluid">
 
-			<div class="copyright">
+			<div class="col-md-6 ftr-nav">
 
-				<p>&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?></p>
+				<div id="footer-nav">
 
-			</div><!-- end copyright -->
+					<?php include( 'includes/footer-navbar.php' ); ?>
 
-		</div><!-- end container -->
+				</div><!-- end footer-nav -->
+
+			</div><!-- end col-md-6 -->
+
+			<div class="col-md-6">
+
+				<div class="copyright">
+
+					<a href="http://www.kcbmwclub.com/"><p>&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?></p></a>
+
+				</div><!-- end copyright -->
+
+			</div><!-- end col-md-6 -->
+
+		</section><!-- end section-1 -->
 
 	</footer>
 

@@ -1,6 +1,9 @@
 .col-sm-8, .primary {
 	text-align: center;
-	padding-bottom: 10px;
+
+	@media ( min-height: 768px ) {
+		text-align: initial;
+	}
 }
 
 .author {
@@ -10,5 +13,4 @@
 .archive-bs {
 	background-color: $col-color;
 	border-radius: $col-radius;
-	margin-left: $col-margin-left;
 }

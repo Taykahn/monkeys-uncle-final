@@ -5,7 +5,7 @@
 ?>
 
 
-<div class="col-md-3 sidebar">
+<div class="col-sm-3 col-md-3 sidebar">
 
 	<?php if ( ! dynamic_sidebar( 'page' )  ): ?>
 

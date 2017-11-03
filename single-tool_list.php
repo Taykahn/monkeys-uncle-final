@@ -5,40 +5,37 @@
 
 get_header() ?>
 
+<div id="arrow"></div>
 
 <section id="tool-list-archive" class="container">
 
-	<div class="row">
+	<article class="content col-md-12 tool-list">
 
-		<article class="content col-md-12 tool-list">
+			<?php if ( have_posts() ) : ?>
 
-				<?php if ( have_posts() ) : ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php while ( have_posts() ) : the_post(); ?>
+					<h2><?php the_title(); ?></h2>
 
-						<?php the_post_thumbnail(); ?>
+					<img><?php the_post_thumbnail(); ?></img>
 
-						<h2><?php the_title(); ?></h2>
+					<p><?php the_content(); ?></p>
 
-						<p><?php the_content(); ?></p>
+				<?php endwhile; else: ?>
 
-					<?php endwhile; else: ?>
+				<div class="page-header">
 
-					<div class="page-header">
+					<?php the_post_thumbnail(); ?>
 
-						<?php the_post_thumbnail(); ?>
+					<h2><?php the_title(); ?></h2>
 
-						<h2><?php the_title(); ?></h2>
+				</div><!-- end page-header -->
 
-					</div><!-- end page-header -->
+				<p>If you don't have this tool, stop what you're doing and take your car to a dealer...</p>
 
-					<p>If you don't have this tool, stop what you're doing and take your car to a dealer...</p>
+			<?php endif; ?>
 
-				<?php endif; ?>
-
-		</article><!--.content-->
-
-	</div><!--.row-->
+	</article><!--.content-->
 
 </section><!--.container-->
 

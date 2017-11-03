@@ -1,6 +1,6 @@
 <div class="large-navbar">
 
-	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="600">
+	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="553">
 
 		<div class="nav-banner" style="background-image: url( '<?php the_field( 'nav_bkgd_img', 'option' ); ?>' )">
 
@@ -15,6 +15,12 @@
 		</div><!-- end navbar-header -->
 
 		<div id="navbar" class="navbar-collapse collapse">
+
+		<div class="search-form">
+
+			<?php get_search_form(); ?>
+
+		</div><!-- end search form -->
 
 			<?php 
 				$args = array(

@@ -1,0 +1,19 @@
+.blog-read-more-button {
+	padding-top: 7px;
+	text-align: center;
+	background-color: $light-blue;
+	height: 34px;
+	width: 90px;
+	border-radius: $col-radius;
+	box-shadow: 2px 2px 14px #a6b8bb;
+
+	a {
+		color: $white-ish !important;
+	}
+
+	a:hover {
+		color: $light-grey !important;
+		text-transform: capitalize;
+		font-weight: bold;
+	}
+}

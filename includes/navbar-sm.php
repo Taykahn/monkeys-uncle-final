@@ -1,12 +1,14 @@
 <div class="small-navbar">
 
-	<div class="navbar-brand logo">
-
-		<a href="http://localhost:3000/"><h1>Monkey's Uncle</h1></a>
-
-	</div><!-- end logo -->
-
 	<nav class="navbar navbar-inverse navbar-fixed-top">
+
+	<div class="nav-banner" style="background-image: url( '<?php the_field( 'nav_bkgd_img', 'option' ); ?>' )">
+
+		<div class="navbar-brand logo">
+
+			<a href="http://localhost:3000/"><h1>Monkey's Uncle</h1></a>
+
+		</div><!-- end logo -->
 
 		<div class="navbar-header">
 
@@ -24,6 +26,12 @@
 		</div><!-- end navbar-header -->
 
 		<div id="navbar" class="navbar-collapse collapse">
+
+		<div class="search-form">
+
+			<?php get_search_form(); ?>
+
+		</div><!-- end search form -->
 
 			<?php 
 				$args = array(

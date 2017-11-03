@@ -21,21 +21,15 @@ $query = new WP_Query( array( 'meta_key' => '_is_ns_featured_post', 'meta_value'
 
 ?>
 
-<div class="search-form">
-
-	<?php get_search_form(); ?>
-
-</div><!-- end search form -->
-
 <section id="blog">
+
+<div id="arrow"></div>
 
 	<div class="container">
 
-	<div id="arrow">
+		<div class="col-md-8">
 
-		<div class="row">
-
-			<div class="blog-content col-md-8">
+			<div class="blog-content">
 
 				<?php include( 'includes/featured.php' ); ?>
 
@@ -49,17 +43,23 @@ $query = new WP_Query( array( 'meta_key' => '_is_ns_featured_post', 'meta_value'
 
 						<h5>Categories: <?php the_category(); ?></h5>
 
-						<?php the_post_thumbnail(); ?>
+						<p><?php the_post_thumbnail(); ?></p>
 
-						<p><?php the_content(); ?></p><hr>
+						<p><?php the_excerpt(); ?></p>
+
+						<div class="blog-read-more-button">
+
+							<a href="<?php the_permalink() ?>" class="blog-read-more-btn">read more</a>
+
+						</div><!-- end blog-read-more-button --><hr>
 
 					<?php endwhile ?>
 
-					<div class="col-md-12 options border-bottom">
+					<div class="options border-bottom">
 
 						<?php do_action( 'mbc_pagination' ) ?>
 
-					</div><!-- end col-md-12 options border-bottom -->
+					</div><!-- end options border-bottom -->
 
 					<?php wp_reset_postdata(); ?>
 
@@ -67,11 +67,9 @@ $query = new WP_Query( array( 'meta_key' => '_is_ns_featured_post', 'meta_value'
 
 			</div><!--.content-->
 
-			<?php get_sidebar() ?>
+		</div><!-- end col-md-8 -->
 
-		</div><!-- end row -->
-
-	</div><!-- end arrow -->
+		<?php get_sidebar() ?>
 
 	</div><!--.container-->
 

@@ -5,29 +5,20 @@
 
 	$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 	$args = array(
-		'post_type' => 'track_blog',
-		'posts_per_page' => 10,
-		'orderby'   => 'date',
-		'paged'     => $paged
+		'post_type'      => 'track_blog',
+		'orderby'        => 'date',
+		'paged'          => $paged
 		);
 
 	$track_blog = new WP_Query( $args );
 
 get_header(); ?>
 
-<div class="search-form">
+	<div class="container track-container">
 
-	<?php get_search_form(); ?>
+		<div id="arrow">
 
-</div><!-- end search form -->
-
-	<div class="container">
-
-	<div id="arrow">
-
-		<div class="track-blog row">
-
-			<div class="col-md-8 track-blog-page ">
+			<div class="col-md-8 track-blog-page">
 
 				<?php if ( $track_blog->have_posts() ) : ?>
 
@@ -45,7 +36,13 @@ get_header(); ?>
 
 						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 
-						<?php the_content(); ?><hr>
+						<?php the_excerpt(); ?>
+
+						<div class="blog-read-more-button">
+
+							<a href="<?php the_permalink() ?>" class="blog-read-more-btn">read more</a>
+
+						</div><!-- end blog-read-more-button --><hr>
 
 					<?php endwhile ?>
 
@@ -53,15 +50,15 @@ get_header(); ?>
 
 						<?php do_action( 'mbc_pagination' ) ?>
 
-					</div>
+					</div><!-- end col-md-12 options border-bottom -->
 
 				<?php endif; ?>
 
-		</div><!-- end row -->
+			</div><!-- end col-md-8 track-blog-page -->
 
-		<?php get_sidebar(); ?>
+				<?php get_sidebar(); ?>
 
-	</div><!-- end arrow -->
+			</div><!-- end arrow -->
 
 	</div><!-- end container -->
 

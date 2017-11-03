@@ -19,7 +19,7 @@ get_header() ?>
 
 <section id="chassis-archive" class="container">
 
-	<div id="arrow">
+	<div id="arrow"></div><!-- end arrow -->
 
 	<div class="row">
 
@@ -44,8 +44,6 @@ get_header() ?>
 		</aside>
 
 	</div><!--.row-->
-
-</div><!-- end arrow -->
 
 </section><!--.container-->
 

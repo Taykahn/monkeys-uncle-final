@@ -1,48 +1,75 @@
-.track-blog-single {
-	border-radius: $col-radius;
-	background-color:  $col-color;
+.track-blog {
+	.container {
+		padding-left: 0px;
+		padding-right: 0px;
 
+		@media ( min-width: 1025px ) {
+			margin-top: 150px;
+			margin-bottom: 50px;
+			padding-left: 43px;
+			padding-right: 43px;
+		}
+	}
+	.col-md-12 {
+		padding-left: 0px;
+		padding-right: 0px;
+		padding-bottom: 20px;
+		background-color: $col-color;
+		border-radius: $col-radius;
+
+		@media ( min-width: 768px ) {
+			margin: 40px;
+		}
+	}
+}
+
+.track-blog-single-content {
 	h2 {
-		font-size: 35px;
+		margin: 0px;
+		padding-top: 20px;
 		padding-bottom: 10px;
-		text-align: center;
 	}
-}
-
-.page-header {
-	border-bottom: none;
-}
-
-.track-blog-single {
-	p {
-		padding-left: 10px;
-		padding-right: 10px;
-		font-size: 20px;
-	}
-
-	h3>p {
-		text-align: center;
-	}
-
 	img {
-		width: -webkit-fill-available;
-		margin-right: 20px;
-		margin-left: 20px;
+		width: 100%;
+		padding: 23px;
+
+		@media ( min-width: 768px ) {
+			padding: 38px;
+		}
+
+		@media ( min-width: 1024px ) {
+			padding: 40px;
+		}
+	}
+
+	p {
+		padding-left: 15px;
+		padding-right: 15px;
+
+		@media ( min-width: 768px ) {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		@media ( min-width: 1025px ) {
+			padding-left: 25px;
+			padding-right: 23px;
+		}
 	}
 }
+
 
 .video-container {
-	margin-left: 25em;
 	margin-top: 40px;
+
+	@media ( min-width: 1025px ) {
+		margin-left: 22em;
+	}
 }
 
 /* Helper Classes ----------------- */
 
 @media ( max-width: 768px ) {
-	.track-blog-single {
-		p {
-			font-size: 15px;
-		}
 
 	.video-container {
 		position: relative;
@@ -52,7 +79,6 @@
 		overflow: hidden;
 		margin-left: 0px;
 	}
-}
 
 	.video-container iframe,  
 	.video-container object,  

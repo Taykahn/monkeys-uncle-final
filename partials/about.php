@@ -4,15 +4,13 @@
  */
 ?>
 
-<div class="parallax" style="background-image: "url( '<?php echo esc_url( the_field( 'hero', 327 ) ); ?>' ) ">
+<div id="arrow"></div>
 
-	<div class="container">
+	<div class="container about-container">
 
-		<div id="arrow">
+		<div class="col-md-12">
 
-		<div class="about col-md-12">
-
-			<div class="row">
+			<div class="about-content">
 
 				<?php if ( have_posts() ) : ?>
 
@@ -26,10 +24,8 @@
 
 				<?php endif; ?>
 
-			</div><!-- end row -->
+			</div><!-- end about-content -->
 
-		</div><!-- end about -->
-
-	</div><!-- end arrow -->
+		</div><!-- end col-md-12 -->
 
 	</div><!-- end container -->

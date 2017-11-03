@@ -16,7 +16,7 @@ $the_shop->mbc_build_cpt( 'the-shop', 'The Shop', 'Shop Posts', $supports = arra
 //Instantiate new class object
 $the_lift = new MBC_Theme( 'the_lift' );
 
-$the_lift->mbc_build_cpt( 'the-lift', 'The Lift', 'Lift Posts', $supports = array(), $settings = array(), $has_arch = true, $hier = true);
+$the_lift->mbc_build_cpt( 'on-the-lift', 'The Lift', 'Lift Posts', $supports = array(), $settings = array(), $has_arch = true, $hier = true);
 
 //Instantiate new class object
 $tool_list = new MBC_Theme( 'tool_list' );

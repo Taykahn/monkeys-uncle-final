@@ -76,12 +76,6 @@ $home = esc_attr( home_url() );
 
 							<?php the_excerpt() ?>
 
-							<div class="blog-read-more-button">
-
-								<a href="<?php the_permalink() ?>" class="blog-read-more-btn">Read More</a>
-
-							</div><!-- end blog-read-more-button -->
-
 						<?php else : ?>
 
 							<?php the_content() ?>

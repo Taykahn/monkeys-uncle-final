@@ -1,16 +1,33 @@
-.content, 
-.tool-list {
-	background-color: $white;
-	border: $border;
-	padding: 20px;
+#tool-list-archive {
+	padding: 0px;
 
-	img {
-		float: left;
+	@media ( min-width: 768px ) {
+		margin-top: 50px;
+		margin-bottom: 50px;
+		padding-left: 42px;
+		padding-right: 42px;
 	}
 
+	@media ( min-width: 1024px ) {
+		margin-top: 150px;
+	}
+}
+
+.content, 
+.tool-list {
+	background-color: $col-color;
+	padding: 20px;
+
 	h2 {
-		text-align: left;
-		margin-top: 6px;
+		font-size: 20px;
+		padding-top: 0px;
+		padding-bottom: 10px;
+	}
+
+	img {
+		display: block;
+		margin: auto;
+		width: initial;
 	}
 
 	p {
@@ -23,11 +40,6 @@
 @media ( max-width: 769px ) {
 	.content, 
 	.tool-list {
-
-		img {
-			margin-top: 22px;
-		}
-
 		p {
 			padding: 0px;
 			font-size: 15px;

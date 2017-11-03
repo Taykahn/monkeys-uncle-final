@@ -1,48 +1,99 @@
+.sgl-shop-container {
+
+	@media ( min-width: 1024px ) {
+		margin-top: 150px;
+	}
+
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
 .shop-single {
 	border-radius: $col-radius;
-	background-color:  $col-color;
-	margin-top: 55px;
-	margin-left: 10px;
-	margin-right: 10px;
+	background-color: $col-color;
+
+	@media ( min-width: 768px ) {
+		margin: 40px;
+	}
+
+	@media ( min-width: 1025px ) {
+		margin: 0px 43px 50px 43px;
+	}
 }
 
 .shop-single-content {
 	padding-left: 15px;
 	padding-right: 15px;
-	text-align: center;
+	margin-bottom: 20px;
+
+	@media ( min-width: 768px ) {
+		padding-left: 30px;
+		padding-right: 30px;
+
+		img {
+			width: 500px;
+			display: block;
+			margin: auto;
+		}
+	}
+
 	h2 {
 		font-size: 35px;
+		margin-bottom: 0px;
 	}
-	p {
-		font-size: 15px;
+
+	h5, p {
 		text-align: center;
 	}
+
 	img {
-		width: 500px;
+		margin-top: 10px;
+	}
+
+	p {
+		font-size: 15px;
+	}
+}
+
+.image-section {
+	@media ( min-width: 768px ) {
+		padding: 21px;
+	}
+
+	@media ( min-width: 1025px ) {
+		padding: 10px;
 	}
 }
 
 .image-gallery {
-	p {
-		text-align: left;
-		font-size: 15px;
+	.col-md-4 {
+		padding-left: 7px;
+		padding-right: 7px;
+
+		@media ( min-width: 768px ) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+	img {
+		background-color: $col-color;
+		border-radius: 5px;
+		margin-bottom: 10px;
+		padding-bottom: 0px;
+
+	@media ( min-width: 1024px ) {
+		height: 300px;
+	}
+
+	@media ( min-width: 1300px ) {
+		height: 500px;
 	}
 }
 
-/* Helper Classes ----------------------- */
-@media ( max-width: 768px ) {
-	.image-gallery {
-		img {
-			background-color: $col-color;
-			border-radius: 5px;
-			margin-bottom: 10px;
-			padding-bottom: 0px;
-		}
-	}
-	.shop-page {
-		margin-top: 30px;
-	}
-	.image-section {
-		padding-left: 0px;
+	p {
+		text-align: left;
+		font-size: 15px;
 	}
 }

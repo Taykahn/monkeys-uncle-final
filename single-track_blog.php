@@ -5,33 +5,39 @@
 
 get_header(); ?>
 
-	<section class="blog">
+<div id="arrow"></div>
 
-		<div class="container track-blog-single col-md-12">
+	<section class="track-blog">
 
-			<div class="row">
+		<div class="container">
 
-				<?php while ( have_posts()) : the_post(); ?>
+			<div class="col-md-12">
 
-					<h2><?php the_title(); ?></h2>
+				<div class="track-blog-single-content">
 
-					<?php the_post_thumbnail(); ?>
+					<?php while ( have_posts()) : the_post(); ?>
 
-					<p><?php the_content(); ?></p>
+						<h2><?php the_title(); ?></h2>
 
-					<div class="video-container">
+						<?php the_post_thumbnail(); ?>
 
-						<?php the_field('track_videos'); ?>
+						<p><?php the_content(); ?></p>
 
-					</div><!-- end video-container -->
+						<div class="video-container">
 
-				<?php endwhile ?>
+							<?php the_field('track_videos'); ?>
 
-				<?php wp_reset_postdata(); ?>
+						</div><!-- end video-container -->
 
-			</div><!-- end row -->
+					<?php endwhile ?>
+
+					<?php wp_reset_postdata(); ?>
+
+				</div><!-- end track-blog-single-content -->
 
 		</div><!-- end col-md-12 -->
+
+		</div><!-- end container -->
 
 	</section><!-- end blog -->
 
