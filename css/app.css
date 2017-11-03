@@ -382,14 +382,16 @@ ul {
   left: calc(50% - 4px);
   top: 23px; }
 
-.navbar .nav-banner {
-  height: 100px; }
-  @media (max-width: 736px) {
-    .navbar .nav-banner {
-      display: initial; } }
-  @media (min-width: 1024px) {
-    .navbar .nav-banner {
-      height: 100px; } }
+.navbar {
+  border: none; }
+  .navbar .nav-banner {
+    height: 100px; }
+    @media (max-width: 736px) {
+      .navbar .nav-banner {
+        display: initial; } }
+    @media (min-width: 1024px) {
+      .navbar .nav-banner {
+        height: 100px; } }
 
 .logo h1 {
   margin-top: 3px;
