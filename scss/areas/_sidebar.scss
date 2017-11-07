@@ -1,28 +1,24 @@
 .sidebar {
+	@media ( max-width: 767px ) {
+		display: none;
+	}
+
 	margin-top: 50px;
 	margin-bottom: 50px;
-	background-color: $col-color;
+	padding: 33px;
+	background-color: $white-transparent;
 	box-shadow: $box-shadow;
 	border-radius: $col-radius;
+}
 
-	@media ( min-width: 1025px ) {
-		margin: 50px 24px 24px 24px;
+.textwidget {
+	p {
+		color: $dark-grey;
 	}
-}
 
-#primary-sidebar {
-	padding: 15px;
-	input, label {
-		font-size: 12px;
+	.twitter-timeline {
+		min-width: unset !important;
 	}
-}
-
-.textwidget p {
-	color: $dark-grey;
-}
-
-.widget {
-	margin: 10px 0 30px;
 }
 
 .widget {
@@ -37,6 +33,15 @@
 
 .wu-wrapper .wu-search input {
 	border-radius: 0px;
+
+	@media ( max-width: 768px ) {
+		font-size: 12px;
+		padding: 0px 0px 0px 27.25px;
+	}
+
+	@media ( min-width: 1024px ) {
+		padding: 10px 9em 10px 31.25px;
+	}
 }
 
 .wu-day-current-temp,
@@ -51,19 +56,13 @@
 } 
 
 .rounded {
-	margin-top: 10px !important;
 	font-family: bangers;
-	font-size: 20px !important;
-	color: $title-black;
+	color: $grey-green;
 	text-align: center;
 }
 
 /* Helper Classes --------------------------- */
-@media ( max-width: 769px ) {
-	.sidebar {
-		display: none;
-	}
-
+@media ( min-width: 769px ) {
 	.wu-wrapper
 	.wu-search
 	input {
@@ -73,11 +72,11 @@
 
 /* Chassis Sidebar -------- */
 #sidebar-widget {
-	margin-left: 64px;
+	margin-top: 50px;
 }
 
 #sidebar {
-	background-color: $col-color;
+	background-color: $white-transparent;
 	border-radius: 5px;
 	margin-bottom: 30px;
 	padding-bottom: 40px;

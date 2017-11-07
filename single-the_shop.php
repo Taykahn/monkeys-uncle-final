@@ -9,7 +9,9 @@ get_header() ?>
 
 	<div class="container sgl-shop-container">
 
-		<div class="shop-single row">
+		<div class="col-sm-12">
+
+		<div class="row shop-single">
 
 			<?php if (have_posts() ) : ?>
 
@@ -44,6 +46,8 @@ get_header() ?>
 			<?php endif; ?>
 
 		</div><!-- end shop-single row -->
+
+</div><!-- .col-sm-12 -->
 
 	</div><!-- end container -->
 

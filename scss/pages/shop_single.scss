@@ -1,41 +1,39 @@
 .sgl-shop-container {
 
+	@media ( max-width: 767px ) {
+		.col-sm-12 {
+			padding: 0px;
+		}
+	}
+
 	@media ( min-width: 1024px ) {
 		margin-top: 150px;
 	}
 
 	width: 100%;
-	padding-left: 0px;
-	padding-right: 0px;
 }
 
 .shop-single {
+	margin-top: 50px;
+	padding-top: 33px;
+	padding-bottom: 33px;
+	margin-bottom: 50px;
 	border-radius: $col-radius;
-	background-color: $col-color;
-
-	@media ( min-width: 768px ) {
-		margin: 40px;
-	}
-
-	@media ( min-width: 1025px ) {
-		margin: 0px 43px 50px 43px;
-	}
+	background-color: $white-transparent;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 .shop-single-content {
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-bottom: 20px;
+	img {
+		width: 85%;
 
-	@media ( min-width: 768px ) {
-		padding-left: 30px;
-		padding-right: 30px;
-
-		img {
+		@media ( min-width: 768px ) {
 			width: 500px;
-			display: block;
-			margin: auto;
 		}
+
+		display: block;
+		margin: auto;
 	}
 
 	h2 {
@@ -53,16 +51,6 @@
 
 	p {
 		font-size: 15px;
-	}
-}
-
-.image-section {
-	@media ( min-width: 768px ) {
-		padding: 21px;
-	}
-
-	@media ( min-width: 1025px ) {
-		padding: 10px;
 	}
 }
 

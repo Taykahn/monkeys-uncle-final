@@ -1,9 +1,8 @@
 #tool-list-archive {
-	padding: 0px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 
 	@media ( min-width: 768px ) {
-		margin-top: 50px;
-		margin-bottom: 50px;
 		padding-left: 42px;
 		padding-right: 42px;
 	}
@@ -12,8 +11,7 @@
 		margin-top: 150px;
 	}
 }
-
-.content, 
+ 
 .tool-list {
 	background-color: $col-color;
 	padding: 20px;
@@ -33,16 +31,5 @@
 	p {
 		padding: 10px;
 		font-size: 17px;
-	}
-}
-
-/* Helper Classes ------------------ */
-@media ( max-width: 769px ) {
-	.content, 
-	.tool-list {
-		p {
-			padding: 0px;
-			font-size: 15px;
-		}
 	}
 }

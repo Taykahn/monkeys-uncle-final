@@ -19,15 +19,12 @@
 }
 
 .lift-page-title {
+	background-color: $white-transparent;
+	border-radius: $col-radius;
+	padding: 33px;
+
 	h2 {
-		padding-top: 10px;
-
-		@media ( min-width: 1025px ) {
-			margin-top: 35px;
-		}
-
-		padding-bottom: 0px;
-		margin-bottom: 0px;
+		padding-top: 16px;
 	}
 
 	h5 {

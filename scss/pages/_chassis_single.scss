@@ -1,22 +1,11 @@
 #chassis-single {
-
-	@media ( min-width: 1025px ) {
-		margin-top: 150px;
-		margin-bottom: 50px;
-	}
 }
 
 .chassis-single-title {
-	h2 {
-		padding-top: 40px;
-
-		@media ( min-width: 769px ) {
-			padding-top: initial;
-		}
-	}
+	padding: 33px;
 
 	img {
-		@media ( min-width: 768px ) {
+		@media ( min-width: 1024px ) {
 			width: initial;
 		}
 
@@ -30,16 +19,7 @@
 }
 
 .chassis-content {
-	background-color: $col-color;
+	background-color: $white-transparent;
 	border-radius: $col-radius;
-	margin-left: 27px;
 	padding-bottom: 15px;
-}
-
-/* Helper Classes -------------------- */
-@media ( max-width: 768px ) {
-	.chassis-content {
-		margin-top: 40px;
-		margin-left: 0px;
-	}
 }

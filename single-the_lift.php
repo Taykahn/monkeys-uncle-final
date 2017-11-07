@@ -9,7 +9,7 @@ get_header() ?>
 
 	<section class="two-column row no-max pad">
 
-		<div class="col-md-12 lift-sgl-col">
+		<div class="col-sm-12 lift-sgl-col">
 
 			<div class="row single-lift">
 

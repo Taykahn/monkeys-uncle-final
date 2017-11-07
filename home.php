@@ -27,7 +27,7 @@ $query = new WP_Query( array( 'meta_key' => '_is_ns_featured_post', 'meta_value'
 
 	<div class="container">
 
-		<div class="col-md-8">
+		<div class="col-sm-8">
 
 			<div class="blog-content">
 

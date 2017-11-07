@@ -5,7 +5,9 @@
 ?>
 
 
-<div class="col-sm-3 col-md-3 sidebar">
+<div class="col-sm-4">
+
+	<div class="sidebar">
 
 	<?php if ( ! dynamic_sidebar( 'page' )  ): ?>
 
@@ -22,5 +24,7 @@
 	<?php endif; ?>
 
 	<?php endif; ?>
+
+</div><!-- .sidebar -->
 
 </div><!-- end col-md-3 sidebar -->

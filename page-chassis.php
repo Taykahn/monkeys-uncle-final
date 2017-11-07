@@ -27,27 +27,27 @@ get_header(); ?>
 
 	</div><!-- end chassis-header -->
 
-	<div class="container diy-pg-container">
+	<div class="container chassis-container">
 
-			<div class="col-md-8">
+			<div class="col-sm-8">
 
-				<div class="diy-page">
+				<div class="chassis-page">
 
-				<?php while ( $chassis->have_posts() ) : $chassis->the_post(); ?>
+					<?php while ( $chassis->have_posts() ) : $chassis->the_post(); ?>
 
-					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
-					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 
-				<?php endwhile; // end of the loop. ?>
+					<?php endwhile; // end of the loop. ?>
 
-				<?php wp_reset_postdata() ?>
+					<?php wp_reset_postdata() ?>
 
-				<?php get_post(); ?>
+					<?php get_post(); ?>
 
-			</div><!-- end chassis-pg-content -->
+				</div><!-- .chassis-page -->
 
-			</div><!-- col-md-8 page-diy -->
+			</div><!-- .col-sm-8 -->
 
 			<?php get_sidebar(); ?>
 

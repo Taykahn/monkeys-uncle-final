@@ -1,18 +1,12 @@
 .blog-content {
+	background-color: $white-transparent;
+	border-radius: $col-radius;
 
 	@media ( min-width: 768px ) {
 		margin-bottom: 20px;
 	}
 
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-left: 0px;
-	margin-right: 0px;
-
-	@media ( min-width: 1200px ) {
-		margin-top: 0px;
-		padding: 20px;
-	}
+	padding: 33px;
 
 	a {
 		color: $title-black;
@@ -20,6 +14,7 @@
 	}
 
 	h2 {
+		padding-top: 20px;
 		margin-bottom: 0px;
 		text-align: left;
 	}

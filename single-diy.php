@@ -13,7 +13,7 @@ $post_id = $post->ID;
 
 <div id="arrow"></div>
 
-<section class="diy-single">
+<section class="diy-single container">
 
 	<?php if ( have_posts() ) : ?>
 

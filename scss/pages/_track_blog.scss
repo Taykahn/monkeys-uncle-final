@@ -1,60 +1,16 @@
 .track-blog-page {
-	@media ( min-width: 1025px ) {
-		padding: 30px;
-	}
+	background-color: $white-transparent;
+	border-radius: $col-radius;
+	padding: 33px;
+}
 
+.track-pg-content {
 	h2 {
-		padding-top: 10px;
-		font-size: 28px;
-
-		@media ( min-width: 1024px ) {
-			font-size: 30px;
-			letter-spacing: 2px;
-		}
-
-		margin-bottom: 10px;
 		text-align: left;
 	}
 
 	img {
-		margin-top: 0px;
-		margin-bottom: 10px;
 		width: 200px;
-	}
-}
-
-.track-blog-page {
-	@media ( min-width: 768px ) {
-		padding: 40px;
-	}
-
-	p {
-		font-size: 18px;
-	}
-}
-
-.page-header {
-	margin: 0px;
-}
-
-/* Helper Classes ------------------- */
-@media ( max-width: 768px ) {
-	.track-blog {
-		margin-left: 0px;
-	}
-
-	.page-header {
-		padding-bottom: 0px;
-	}
-
-	.track-blog-page {
-		p {
-			font-size: 15px;
-			padding-bottom: 10px;
-		}
-
-		img {
-			margin-bottom: 0px;
-		}
+		text-align: left;
 	}
 }

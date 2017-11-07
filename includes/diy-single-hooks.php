@@ -15,21 +15,19 @@ function warning_section() {
 
 ?>
 
-	<section class="col-md-12">
 
-		<div class="row">
+	<section class="col-sm-12 warning-col">
 
-			<div class="warnings">
+		<div class="warnings">
 
-				<h2>Warning!!!</h2>
+			<h2>Warning!!!</h2>
 
-				<p>This is a write up on how I did this project. I am not a professional and not responsible for anything you do to your car.</p>
+			<p>This is a write up on how I did this project. I am not a professional and not responsible for anything you do to your car.</p>
 
-			</div><!-- end warnings -->
-
-		</div><!-- end row -->
+		</div><!-- end warnings -->
 
 	</section><!-- end col-md-12 -->
+
 
 <?php
 
@@ -51,13 +49,13 @@ function pl_ts_rt_section() {
 
 	<section class="three-column row no-max pad">
 
-		<div class="col-sm-12 col-md-12 pl-ts-rt-col">
+		<div class="col-sm-12 pl-ts-rt-col">
 
 			<div class="row diy-top-boxes">
 
 				<div class="diy-single-top-bar-wrapper">
 
-					<div class="col-sm-4 col-md-4">
+					<div class="col-sm-4">
 
 						<div class="parts-list">
 
@@ -69,7 +67,7 @@ function pl_ts_rt_section() {
 
 					</div><!-- end col-md-4 -->
 
-					<div class="col-sm-4 col-md-4">
+					<div class="col-sm-4">
 
 						<div class="torque-spec">
 
@@ -81,7 +79,7 @@ function pl_ts_rt_section() {
 
 					</div><!-- end col-md-4 -->
 
-					<div class="col-sm-4 col-md-4">
+					<div class="col-sm-4">
 
 						<div class="required-tools">
 
@@ -123,8 +121,6 @@ function procedure_section() {
 
 		<div class="col-md-12">
 
-			<div class="row">
-
 				<div class="diy-single-text">
 
 					<h2>The Procedure</h2>
@@ -132,8 +128,6 @@ function procedure_section() {
 					<p><?php the_field('diy_procedure'); ?></p>
 
 				</div><!-- end diy-single-text --> 
-
-			</div><!-- end row -->
 
 		</div><!-- end col-md-12 -->
 
@@ -173,7 +167,7 @@ function image_gallery_section() {
 
 								<?php foreach( $images as $image ): ?>
 
-								<div class="col-md-4">
+								<div class="col-sm-4">
 
 									<li>
 
@@ -187,7 +181,7 @@ function image_gallery_section() {
 
 									</li>
 
-								</div><!-- end col-md-4 -->
+								</div><!-- end col-sm-4 -->
 
 								<?php endforeach; ?>
 

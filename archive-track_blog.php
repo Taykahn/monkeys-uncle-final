@@ -18,13 +18,15 @@ get_header(); ?>
 
 		<div id="arrow">
 
-			<div class="col-md-8 track-blog-page">
+			<div class="col-sm-8">
+
+				<div class="track-blog-page">
 
 				<?php if ( $track_blog->have_posts() ) : ?>
 
 					<?php while ( $track_blog->have_posts() ) : $track_blog->the_post(); ?>
 
-						<div class="page-header">
+						<div class="track-pg-content">
 
 							<a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
 
@@ -32,11 +34,11 @@ get_header(); ?>
 
 							<h5>Categories: <?php the_category(); ?></h5>
 
-						</div><!-- end page-header -->
+							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 
-						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+							<?php the_excerpt(); ?>
 
-						<?php the_excerpt(); ?>
+						</div><!-- .track-pg-content -->
 
 						<div class="blog-read-more-button">
 
@@ -54,7 +56,9 @@ get_header(); ?>
 
 				<?php endif; ?>
 
-			</div><!-- end col-md-8 track-blog-page -->
+			</div><!-- .track-blog-page -->
+
+			</div><!-- .col-md-8 -->
 
 				<?php get_sidebar(); ?>
 

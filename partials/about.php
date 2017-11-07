@@ -6,26 +6,30 @@
 
 <div id="arrow"></div>
 
-	<div class="container about-container">
+	<div class="container">
 
-		<div class="col-md-12">
+		<div class="col-sm-12 about-col">
 
-			<div class="about-content">
+			<div class="about-page">
 
-				<?php if ( have_posts() ) : ?>
+				<div class="about-content">
 
-					<?php while ( have_posts() ) : the_post(); ?>
+					<?php if ( have_posts() ) : ?>
 
-						<h2><?php the_title(); ?></h2>
+						<?php while ( have_posts() ) : the_post(); ?>
 
-						<p><?php the_content(); ?></p>
+							<h2><?php the_title(); ?></h2>
 
-					<?php endwhile; ?>
+							<p><?php the_content(); ?></p>
 
-				<?php endif; ?>
+						<?php endwhile; ?>
 
-			</div><!-- end about-content -->
+					<?php endif; ?>
 
-		</div><!-- end col-md-12 -->
+				</div><!-- .about-content -->
 
-	</div><!-- end container -->
+			</div><!-- .col-md-12 -->
+
+		</div><!-- .about-page -->
+
+	</div><!-- .container -->

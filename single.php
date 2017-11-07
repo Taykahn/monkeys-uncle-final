@@ -11,7 +11,7 @@
 
 	<div class="container single-container">
 
-		<div class="col-md-8 single-col">
+		<div class="col-sm-8 single-col">
 
 			<div class="blog-content">
 

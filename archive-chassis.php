@@ -23,7 +23,7 @@ get_header() ?>
 
 	<div class="row">
 
-		<article class="content col-md-8">
+		<article class="content col-md-8 tab-pg-col">
 
 			<?php if ( $chassis->have_posts() ) : ?>
 

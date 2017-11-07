@@ -1,37 +1,43 @@
 <div class="large-navbar">
 
-	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="553">
+	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="555">
 
-		<div class="nav-banner" style="background-image: url( '<?php the_field( 'nav_bkgd_img', 'option' ); ?>' )">
+		<div class="nav-banner container-fluid no-pad" style="background-image: url( '<?php the_field( 'nav_bkgd_img', 'option' ); ?>' )">
 
-		<div class="navbar-header">
+			<div class="col-md-4">
 
-			<div class="navbar-brand logo">
+				<div class="nav-logo">
 
-				<a href="http://localhost:3000/"><h1>Monkey's Uncle</h1></a>
+					<a href="http://localhost:3000/"><h1>Monkey's Uncle</h1></a>
 
-			</div><!-- end logo -->
+				</div><!-- .logo -->
 
-		</div><!-- end navbar-header -->
+			</div><!-- .col-sm-4 -->
 
-		<div id="navbar" class="navbar-collapse collapse">
+			<div id="navbar" class="navbar-collapse collapse">
 
-		<div class="search-form">
+				<div class="col-md-8">
 
-			<?php get_search_form(); ?>
+					<div class="search-form">
 
-		</div><!-- end search form -->
+						<?php get_search_form(); ?>
 
-			<?php 
-				$args = array(
-				'menu'          => 'header-menu',
-				'menu_class'    => 'nav navbar-nav',
-				'container'     => 'false'
-			);
-				wp_nav_menu( $args );
-			?>
+					</div><!-- end search form -->
 
-		</div><!--/.navbar-collapse -->
+					<?php 
+						$args = array(
+						'menu'          => 'header-menu',
+						'menu_class'    => 'nav navbar-nav',
+						'container'     => 'false'
+					);
+						wp_nav_menu( $args );
+					?>
+
+				</div><!-- .col-sm-8 -->
+
+			</div><!--/.navbar-collapse -->
+
+		</div><!--.nav-banner -->
 
 	</nav><!-- end navbar navbar-inverse -->
 

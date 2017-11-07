@@ -9,7 +9,9 @@ get_header() ?>
 
 <section id="tool-list-archive" class="container">
 
-	<article class="content col-md-12 tool-list">
+	<article class="content col-sm-12">
+
+		<div class="tool-list">
 
 			<?php if ( have_posts() ) : ?>
 
@@ -21,19 +23,11 @@ get_header() ?>
 
 					<p><?php the_content(); ?></p>
 
-				<?php endwhile; else: ?>
-
-				<div class="page-header">
-
-					<?php the_post_thumbnail(); ?>
-
-					<h2><?php the_title(); ?></h2>
-
-				</div><!-- end page-header -->
-
-				<p>If you don't have this tool, stop what you're doing and take your car to a dealer...</p>
+				<?php endwhile; ?>
 
 			<?php endif; ?>
+
+		</div><!-- .tool-list -->
 
 	</article><!--.content-->
 

@@ -1,17 +1,5 @@
 .diy-single {
-	margin-top: 0px;
-
-	@media ( min-width: 1025px ) {
-		margin-top: 98px;
-	}
-
-	background-color: $col-color;
-
-	@media ( max-width: 768px ) {
-		h2 {
-			padding-top: 20px;
-		}
-	}
+	background-color: $white-transparent;
 
 	a {
 		color: $grey-green;
@@ -28,21 +16,27 @@
 
 		padding-top: 1em;
 		font-size: 43px;
+
+		@media ( min-width: 1300px ) {
+			font-size: 50px;
+		}
+	}
+}
+
+.diy-top-boxes {
+	@media ( max-width: 767px ) {
+		margin: 0px;
+	}
+}
+
+.warning-col {
+	@media ( max-width: 767px ) {
+		padding: 0px;
 	}
 }
 
 .warnings {
 	background-color: yellow !important;
-
-	@media ( min-width: 768px ) {
-		margin-left: 10px;
-		margin-right: 10px;
-	}
-
-	@media ( min-width: 1024px ) {
-		margin-left: 27px;
-		margin-right: 27px;
-	}
 
 	h2 {
 		font-size: 45px;
@@ -53,7 +47,9 @@
 }
 
 .pl-ts-rt-col {
-		margin-top: 20px;
+	margin-top: 20px;
+	padding-left: 62px;
+	padding-right: 31px;
 
 		@media ( max-width: 767px ) {
 			padding-left: 0px;
@@ -63,22 +59,12 @@
 
 .diy-top-boxes,
 .parts-list {
-	@media ( min-width: 1025px ) {
-		padding-top: 20px;
-		padding-left: 12px;
-		padding-right: 12px;
-	}
+
 }
 
 .diy-single-text {
 	@media ( min-width: 768px ) {
-		padding-left: 25px;
-		padding-right: 25px;
-	}
-
-	@media ( min-width: 1024px ) {
-		padding-left: 28px;
-		padding-right: 28px;
+		padding: 46px;
 	}
 }
 
@@ -91,6 +77,10 @@
 		@media ( min-width: 768px ) {
 			font-size: 19px;
 		}
+
+		@media ( min-width: 1300px ) {
+			font-size: 46px;
+		}
 	}
 }
 
@@ -98,11 +88,18 @@
 .required-tools,
 .torque-spec,
 .parts-list {
+	@media ( min-width: 768px ) {
+		margin-left: 32px;
+		margin-right: 32px;
+	}
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+
 	@media ( max-width: 767px ) {
 		margin-top: 20px;
 	}
 
-	padding: 1px;
 	border-radius: $col-radius;
 	background-color: $light-grey;
 
@@ -115,6 +112,12 @@
 		font-size: 15px;
 		padding-left: 5px;
 		padding-right: 5px;
+	}
+
+	p, a {
+		@media ( min-width: 1300px ) {
+			font-size: 30px;
+		}
 	}
 }
 
@@ -157,6 +160,10 @@
 .diy-single-text {
 	p {
 		font-size: 15px;
+
+		@media ( min-width: 1300px ) {
+			font-size: 30px;
+		}
 	}
 
 	img {
@@ -172,8 +179,16 @@
 }
 
 .diy-single-image-gallery {
-	padding-left: 10px;
-	padding-right: 10px;
+	@media ( max-width: 767px ) {
+		.col-sm-4 {
+			padding: 0px;
+		}
+	}
+
+	@media ( min-width: 768px ) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 
 	@media ( min-width: 1024px ) {
 		padding-left: 0px;
@@ -207,6 +222,10 @@
 				font-size: 15px;
 				text-align: center;
 				margin-bottom: 0px;
+
+				@media ( min-width: 1300px ) {
+					font-size: 30px;
+				}
 			}
 
 			p:last-child {
@@ -217,16 +236,12 @@
 }
 
 .img-gallery {
+	@media ( min-width: 768px ) {
+		padding: 32px;
+	}
+
 	.container {
 		margin-top: 0px;
-		margin-bottom: 20px;
-		padding-left: 0px;
-		padding-right: 0px;
-
-		@media ( min-width: 1025px ) {
-			padding-left: 28px;
-			padding-right: 28px;
-		}
 	}
 }
 

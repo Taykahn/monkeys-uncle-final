@@ -11,7 +11,7 @@ get_header(); ?>
 
 		<div class="container">
 
-			<div class="col-md-12">
+			<div class="col-sm-12">
 
 				<div class="track-blog-single-content">
 
@@ -27,13 +27,13 @@ get_header(); ?>
 
 							<?php the_field('track_videos'); ?>
 
-						</div><!-- end video-container -->
+						</div><!-- .video-container -->
 
 					<?php endwhile ?>
 
 					<?php wp_reset_postdata(); ?>
 
-				</div><!-- end track-blog-single-content -->
+				</div><!-- .track-blog-single-content -->
 
 		</div><!-- end col-md-12 -->
 

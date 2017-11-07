@@ -13,7 +13,9 @@ get_header() ?>
 
 <section id="chassis-single" class="container">
 
-		<article class="chassis-content col-md-7">
+	<div class="col-sm-8">
+
+		<article class="chassis-content">
 
 			<?php if ( have_posts() ) : ?>
 
@@ -33,9 +35,11 @@ get_header() ?>
 
 			<?php endif ?>
 
-		</article><!--.content-->
+		</article><!--.chassis-content-->
 
-		<aside= id="sidebar-widget" class="col-md-4">
+	</div><!-- .col-sm-8 -->
+
+		<aside= id="sidebar-widget" class="col-sm-4">
 
 			<?php get_template_part( 'sidebars/chassis-sidebar' ) ?>
 

@@ -1,34 +1,27 @@
-.about-container {
-	.col-md-12 {
+.about-col {
+
+	@media ( max-width: 767px ) {
 		padding: 0px;
-	}
-
-	padding: 0px;
-	border-radius: $col-radius;
-
-	@media ( min-width: 768px ) {
-		margin-top: 40px;
-		margin-bottom: 40px;
-		padding-left: 40px;
-		padding-right: 40px;
-	}
-
-	@media ( min-width: 1024px ) {
-		margin-top: 150px;
 	}
 }
 
-.about-content {
-	background-color: $col-color;
-	padding: 10px;
+.about-page {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
 
-	@media ( min-width: 768px ) {
-		padding: 50px;
-	}
+.about-content {
+	background-color: $white-transparent;
+	padding: 33px;
 
 		p {
 		margin: 0px;
 		line-height: 30px;
 		color: $black;
+
+		@media ( min-width: 1300px ) {
+			font-size: 25px;
+			line-height: 40px;
+		}
 	}
 }
