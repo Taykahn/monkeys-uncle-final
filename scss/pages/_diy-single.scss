@@ -23,6 +23,14 @@
 	}
 }
 
+.diy-single-text {
+	@media ( max-width: 767px ) {
+		h2 {
+			margin-top: 20px;
+		}
+	}
+}
+
 .diy-top-boxes {
 	@media ( max-width: 767px ) {
 		margin: 0px;

@@ -75,7 +75,6 @@
   display: none; }
 
 /* Variables ------------- */
-/* rgba(255, 255, 255, .89); */
 body {
   font-family: 'Fanwood Text', serif, 'Open+Sans', 'Bangers';
   -webkit-font-smoothing: antialiased;
@@ -261,7 +260,7 @@ ul {
   height: 45px;
   position: relative;
   margin-top: 11px;
-  margin-right: 26px;
+  margin-right: 30px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -656,7 +655,7 @@ ul {
   margin-top: 50px;
   margin-bottom: 50px;
   padding: 33px;
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.89);
   -webkit-box-shadow: 2px 2px 10px #fffff9;
      -moz-box-shadow: 2px 2px 10px #fffff9;
           box-shadow: 2px 2px 10px #fffff9;
@@ -718,7 +717,7 @@ input {
   margin-top: 50px; }
 
 #sidebar {
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.89);
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
@@ -745,7 +744,7 @@ input {
       padding-bottom: 5px; } }
 
 .blog-content {
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.89);
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
@@ -803,7 +802,7 @@ input {
     margin-top: 0px; } }
 
 .diy-single {
-  background-color: #ccc; }
+  background-color: rgba(255, 255, 255, 0.89); }
   .diy-single a {
     color: #495045; }
 
@@ -817,6 +816,10 @@ input {
   @media (min-width: 1300px) {
     .diy-single-title h2 {
       font-size: 50px; } }
+
+@media (max-width: 767px) {
+  .diy-single-text h2 {
+    margin-top: 20px; } }
 
 @media (max-width: 767px) {
   .diy-top-boxes {
@@ -1026,7 +1029,7 @@ input {
       margin-right: 10px; } }
 
 .lift-page-title {
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.89);
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
@@ -1062,7 +1065,7 @@ input {
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.89);
   margin-left: 0px;
   margin-right: 0px;
   padding: 43px; }
@@ -1156,7 +1159,7 @@ input {
       min-height: 200px; } }
 
 .chassis-page {
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.89);
   padding: 33px; }
   .chassis-page h2 {
     padding-top: 12px; }
@@ -1215,7 +1218,7 @@ input {
     padding: 10px; }
 
 .chassis-content {
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.89);
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
@@ -1230,7 +1233,7 @@ input {
   margin-bottom: 50px; }
 
 .about-content {
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.89);
   padding: 33px; }
   .about-content p {
     margin: 0px;
@@ -1242,7 +1245,7 @@ input {
         line-height: 40px; } }
 
 .shop-page {
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.89);
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
@@ -1298,7 +1301,7 @@ input {
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.89);
   margin-left: 0px;
   margin-right: 0px; }
 
@@ -1350,7 +1353,7 @@ input {
   font-size: 15px; }
 
 .track-blog-page {
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.89);
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
@@ -1370,9 +1373,11 @@ input {
     .track-blog {
       margin-top: 150px;
       margin-bottom: 50px; } }
+  .track-blog .col-sm-12 {
+    padding: 0px; }
 
 .track-blog-single-content {
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.89);
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
