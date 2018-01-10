@@ -3,7 +3,7 @@
  * Single Track Blog
  */
 
-get_header(); ?>
+include( 'partials/header2.php' ); ?>
 
 <div id="arrow"></div>
 
@@ -35,10 +35,10 @@ get_header(); ?>
 
 				</div><!-- .track-blog-single-content -->
 
-		</div><!-- end col-md-12 -->
+			</div><!-- .col-sm-12 -->
 
-		</div><!-- end container -->
+		</div><!-- .container -->
 
-	</section><!-- end blog -->
+	</section><!-- .track-blog -->
 
 <?php get_footer(); ?>

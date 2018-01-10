@@ -1,8 +1,10 @@
-.search-content {
+.inner-content {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 33px;
+	background-color: $white-transparent;
 	border-radius: $col-radius;
-	background-color: $col-color;
 }
-
 
 @media (max-width: 768px) {
 	.search-content {

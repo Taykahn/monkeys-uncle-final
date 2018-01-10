@@ -77,7 +77,7 @@ gulp.task( 'jsWatch', [ 'minifyScripts' ], browserSync.reload );
 gulp.task( 'watchFiles', function() {
   browserSync({
     proxy: {
-      target: 'http://monkeys-uncle.dev/'
+      target: 'http://monkeys-uncle.test/'
     }
   });
   gulp.watch([ '../scss/**/*.scss' ], [ 'cssWatch' ]);

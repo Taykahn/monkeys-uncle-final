@@ -29,6 +29,12 @@
 			margin-top: 20px;
 		}
 	}
+
+	@media ( min-width: 1300px ) {
+		h2 {
+			font-size: 50px;
+		}
+	}
 }
 
 .diy-top-boxes {
@@ -183,6 +189,14 @@
 
 		float: left;
 		margin-right: 10px;
+	}
+}
+
+.img-gallery-title {
+	@media ( min-width: 1300px ) {
+		h2 {
+			font-size: 50px;
+		}
 	}
 }
 

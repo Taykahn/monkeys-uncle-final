@@ -1,8 +1,16 @@
+<?php
+/**
+ * Small screen Navigation
+ */
+?>
+
 <div class="small-navbar">
 
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div id="wrapper">
 
-	<div class="nav-banner container-fluid" style="background-image: url( '<?php the_field( 'nav_bkgd_img', 'option' ); ?>' )">
+		<div class="overlay"></div>
+
+			<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
 
 		<div class="col-sm-4">
 
@@ -12,46 +20,45 @@
 
 		</div><!-- end logo -->
 
-	</div><!-- .col-sm-4 -->
+				<div class="search-form">
 
-		<div class="navbar-header">
+					<?php get_search_form(); ?>
 
-			<button type="button" class="navbar-toggle collapsed" id="nav-icon2" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				</div><!-- end search form -->
 
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
+				<ul class="nav sidebar-nav">
 
-			</button><!-- end navbar-toggle collapsed -->
+				<?php 
+					$args = array(
+					'menu'          => 'header-menu',
+					'menu_class'    => 'nav navbar-nav',
+					'container'     => 'false'
+				);
+					wp_nav_menu( $args );
+				?>
 
-		</div><!-- end navbar-header -->
+			</nav>
 
-	<div class="col-sm-8 nav-tab-col">
+			<div id="page-content-wrapper">
 
-		<div id="navbar" class="navbar-collapse collapse">
+			<div class="header-logo-sm-screen">
 
-		<div class="search-form">
+			<a href="http://localhost:3000/"><h1>Monkey's Uncle</h1></a>
 
-			<?php get_search_form(); ?>
+		</div><!-- end logo -->
 
-		</div><!-- end search form -->
+				<button type="button" class="hamburger is-closed" data-toggle="offcanvas">
 
-			<?php 
-				$args = array(
-				'menu'          => 'header-menu',
-				'menu_class'    => 'nav navbar-nav',
-				'container'     => 'false'
-			);
-				wp_nav_menu( $args );
-			?>
+					<span class="hamb-top"></span>
+					<span class="hamb-middle"></span>
+					<span class="hamb-bottom"></span>
 
-		</div><!--/.navbar-collapse -->
+				</button>
 
-	</div><!-- .col-sm-8 -->
+			</div>
 
-	</nav><!-- end navbar navbar-inverse -->
+		</div>
 
-</div><!-- end small navbar -->
+	</div>
+
+</div><!-- end small-nav -->

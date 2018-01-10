@@ -155,7 +155,11 @@ function image_gallery_section() {
 
 		<div class="container">
 
+			<div class="img-gallery-title">
+
 				<h2><?php the_field('gallery_title'); ?></h2>
+
+			</div><!-- .img-gallery-title -->
 
 				<div class="diy-single-image-gallery">
 

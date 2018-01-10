@@ -40,8 +40,6 @@
 
 	</head>
 
-	<div class="parallax" style="background-image: url( '<?php echo esc_url( the_field( 'main_background_image', 'option' ) ); ?>' )">
-
 	<body <?php body_class( $classes ) ?>>
 
 		<header>
@@ -71,6 +69,8 @@
 			</div><!-- end navbar-lg -->
 
 		</header>
+
+<div class="parallax" style="background-image: url( '<?php echo esc_url( the_field( 'main_background_image', 'option' ) ); ?>' )">
 
 
 

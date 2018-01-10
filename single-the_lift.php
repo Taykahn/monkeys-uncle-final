@@ -3,15 +3,13 @@
  * Single The Lift
  */
 
-get_header() ?>
+include( 'partials/header2.php' ); ?>
 
-<div id="arrow"></div>
+	<section class="two-column">
 
-	<section class="two-column row no-max pad">
+		<div class="lift-sgl-col">
 
-		<div class="col-sm-12 lift-sgl-col">
-
-			<div class="row single-lift">
+			<div class="single-lift">
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
@@ -23,10 +21,10 @@ get_header() ?>
 
 				<?php endwhile ?>
 
-			</div><!-- end row -->
+			</div><!-- .single-lift -->
 
-		</div><!-- end col-md-12 -->
+		</div><!-- .lift-sgl-col -->
 
-	</section><!-- end two-column row no-max pad -->
+	</section><!-- .two-column -->
 
 <?php get_footer(); ?>

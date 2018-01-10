@@ -1,27 +1,23 @@
 #scroll {
-	padding-top: 33em;
-
-	@media ( min-width: 375px ) {
-		padding-top: 38em;
+	@media ( max-width: 768px ) {
+		padding-top: 63em;
 	}
 
-	@media ( min-width: 414px ) {
-		padding-top: 42em;
-	}
-
-	@media ( min-width: 568px ) {
+	@media ( max-width: 568px ) {
 		padding-top: 16em;
 	}
 
-	@media ( min-width: 768px ) {
-		padding-top: 62em;
+	@media ( max-width: 415px ) {
+		padding-top: 42em;
 	}
 
-	@media ( min-width: 1024px ) {
-		padding-top: 30em;
+	@media ( max-width: 375px ) {
+		padding-top: 38em;
 	}
 
 	img {
+		display: block;
+		margin: 0 auto;
 		width: initial;
 		padding-right: 2em;
 		padding-left: 3em;
@@ -31,8 +27,10 @@
 			padding-left: 0px;
 		}
 
-		display: block;
-		margin: 0 auto;
+		@media ( min-width: 769px ) {
+			display: none;
+		}
+
 	}
 }
 

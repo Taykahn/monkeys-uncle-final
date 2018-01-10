@@ -3,11 +3,11 @@
  * Template name: Search Page
  */
 
-get_header() 
-
-?>
+get_header() ?>
 
 	<section id="search-page" class="container">
+
+		<div id="arrow"></div>
 
 		<div class="inner-wrapper row">
 

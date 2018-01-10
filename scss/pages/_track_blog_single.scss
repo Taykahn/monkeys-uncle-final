@@ -1,9 +1,8 @@
 .track-blog {
-	margin-top: 50px;
 	margin-bottom: 50px;
 
 	@media ( min-width: 1025px ) {
-		margin-top: 150px;
+		margin-top: 50px;
 		margin-bottom: 50px;
 		}
 
@@ -14,9 +13,10 @@
 }
 
 .track-blog-single-content {
+	margin-top: 50px;
 	background-color: $white-transparent;
 	border-radius: $col-radius;
-	padding: 33px;
+	padding: 47px;
 
 	h2 {
 		margin: 0px;

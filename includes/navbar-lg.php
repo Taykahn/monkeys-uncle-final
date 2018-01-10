@@ -1,3 +1,9 @@
+<?php
+/**
+ * Large screen Navigation
+ */
+?>
+
 <div class="large-navbar">
 
 	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="555">

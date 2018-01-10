@@ -3,11 +3,11 @@
  * Single Post Page
  */
 
- get_header(); ?>
+include( 'partials/header2.php' ); ?>
 
 <section id="blog">
 
-<div id="arrow"></div>
+	<div id="arrow"></div>
 
 	<div class="container single-container">
 
@@ -43,14 +43,14 @@
 
 				<?php endif ?>
 
-			</div><!--.content-->
+			</div><!-- .content -->
 
-		</div><!-- end col-md-8 -->
+		</div><!-- .col-sm-8 -->
 
 		<?php get_sidebar() ?>
 
-	</div><!--.container-->
+	</div><!-- .container -->
 
-</section><!--#blog-->
+</section><!-- #blog -->
 
 <?php get_footer(); ?>

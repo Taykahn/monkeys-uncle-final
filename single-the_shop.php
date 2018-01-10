@@ -3,7 +3,7 @@
  * Single The Shop
  */
 
-get_header() ?>
+include( 'partials/header2.php' ); ?>
 
 <div id="arrow"></div>
 
