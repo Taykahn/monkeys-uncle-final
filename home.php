@@ -23,11 +23,15 @@ $query = new WP_Query( array( 'meta_key' => '_is_ns_featured_post', 'meta_value'
 
 <section id="blog">
 
-<div id="arrow"></div>
+	<div id="page-title">
+
+		<h1>Blog</h1>
+
+	</div><!-- #page-title -->
 
 	<div class="container">
 
-		<div class="col-sm-8">
+		<div class="col-sm-9">
 
 			<div class="blog-content">
 
@@ -67,7 +71,7 @@ $query = new WP_Query( array( 'meta_key' => '_is_ns_featured_post', 'meta_value'
 
 			</div><!--.content-->
 
-		</div><!-- end col-md-8 -->
+		</div><!-- end col-md-9 -->
 
 		<?php get_sidebar() ?>
 

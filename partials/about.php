@@ -4,32 +4,34 @@
  */
 ?>
 
-<div id="arrow"></div>
+<div id="page-title">
 
-	<div class="container">
+	<h1>About</h1>
 
-		<div class="col-sm-12 about-col">
+</div><!-- #page-title -->
 
-			<div class="about-page">
+<div class="container">
 
-				<div class="about-content">
+	<div class="col-sm-12 about-col">
 
-					<?php if ( have_posts() ) : ?>
+		<div class="about-page">
 
-						<?php while ( have_posts() ) : the_post(); ?>
+			<div class="about-content">
 
-							<h2><?php the_title(); ?></h2>
+				<?php if ( have_posts() ) : ?>
 
-							<p><?php the_content(); ?></p>
+					<?php while ( have_posts() ) : the_post(); ?>
 
-						<?php endwhile; ?>
+						<p><?php the_content(); ?></p>
 
-					<?php endif; ?>
+					<?php endwhile; ?>
 
-				</div><!-- .about-content -->
+				<?php endif; ?>
 
-			</div><!-- .col-md-12 -->
+			</div><!-- .about-content -->
 
-		</div><!-- .about-page -->
+		</div><!-- .col-md-12 -->
 
-	</div><!-- .container -->
+	</div><!-- .about-page -->
+
+</div><!-- .container -->

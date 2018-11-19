@@ -4,6 +4,7 @@
  */
 
 	$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+
 	$args = array(
 		'post_type' => 'the_shop',
 		'orderby'   => 'date',
@@ -14,11 +15,15 @@
 
 get_header(); ?>
 
-<div id="arrow"></div>
+<div id="page-title">
+
+	<h1>The Shop</h1>
+
+</div><!-- #page-title -->
 
 	<div class="container">
 
-		<div class="col-sm-8">
+		<div class="col-sm-9">
 
 			<div class="shop-page">
 
@@ -62,7 +67,7 @@ get_header(); ?>
 
 			</div><!-- .shop-page -->
 
-		</div><!-- .col-sm-8 -->
+		</div><!-- .col-sm-9 -->
 
 		<?php get_sidebar(); ?>
 

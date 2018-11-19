@@ -23,7 +23,7 @@ get_header() ?>
 
 	<div class="row">
 
-		<article class="col-md-8">
+		<article class="col-md-9">
 
 			<?php if ( $diy->have_posts() ) : ?>
 
@@ -37,7 +37,7 @@ get_header() ?>
 
 		</article><!--.content-->
 
-		<aside id="sidebar" class="col-md-4">
+		<aside id="sidebar" class="col-md-3">
 
 			<?php get_template_part( 'sidebars/chassis-sidebar' ) ?>
 

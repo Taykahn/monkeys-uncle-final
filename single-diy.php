@@ -11,8 +11,6 @@ $post_id = $post->ID;
 
  get_header() ?>
 
-<div id="arrow"></div>
-
 <section class="diy-single container">
 
 	<?php if ( have_posts() ) : ?>

@@ -4,6 +4,7 @@
  */
 
 	$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+
 	$args = array(
 		'post_type'      => 'track_blog',
 		'orderby'        => 'date',
@@ -14,11 +15,17 @@
 
 get_header(); ?>
 
+<div id="page-title">
+
+	<h1>Track Blog</h1>
+
+</div><!-- #page-title -->
+
 	<div class="container track-container">
 
 		<div id="arrow">
 
-			<div class="col-sm-8">
+			<div class="col-sm-9">
 
 				<div class="track-blog-page">
 
@@ -58,7 +65,7 @@ get_header(); ?>
 
 			</div><!-- .track-blog-page -->
 
-			</div><!-- .col-md-8 -->
+			</div><!-- .col-md-9 -->
 
 				<?php get_sidebar(); ?>
 

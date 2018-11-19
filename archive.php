@@ -9,7 +9,7 @@ get_header(); ?>
 
 		<div class="row">
 
-			<div class="archive-bs col-md-8">
+			<div class="archive-bs col-md-9">
 
 				<div id="content" role="main">
 
@@ -37,7 +37,7 @@ get_header(); ?>
 
 				</div><!-- #content -->
 
-			</div><!-- col-md-7 -->
+			</div><!-- col-md-9 -->
 
 			<?php get_sidebar(); ?>
 

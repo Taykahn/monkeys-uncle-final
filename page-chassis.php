@@ -13,8 +13,6 @@ $post_id = $post->ID;
 
 get_header(); ?>
 
-<div id="arrow"></div>
-
 	<div class="chassis-header">
 
 		<div class="banner-chassis-title" style="background-image: url( '<?php echo esc_url( the_field( 'chassis_title_img', 'option' ) ); ?>' )">
@@ -29,7 +27,7 @@ get_header(); ?>
 
 	<div class="container chassis-container">
 
-			<div class="col-sm-8">
+			<div class="col-sm-9">
 
 				<div class="chassis-page">
 
@@ -47,7 +45,7 @@ get_header(); ?>
 
 				</div><!-- .chassis-page -->
 
-			</div><!-- .col-sm-8 -->
+			</div><!-- .col-sm-9 -->
 
 			<?php get_sidebar(); ?>
 

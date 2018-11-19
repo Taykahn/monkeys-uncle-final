@@ -5,8 +5,6 @@
 
 include( 'partials/header2.php' ); ?>
 
-<div id="arrow"></div>
-
 	<section class="track-blog">
 
 		<div class="container">

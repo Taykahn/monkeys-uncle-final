@@ -9,11 +9,15 @@ $post_id = $post->ID;
 
 get_header() ?>
 
-<div id="arrow"></div>
+<div id="page-title">
+
+	<h1>Chassis</h1>
+
+</div><!-- #page-title -->
 
 <section id="chassis-single" class="container">
 
-	<div class="col-sm-8">
+	<div class="col-sm-9">
 
 		<article class="chassis-content">
 
@@ -37,7 +41,7 @@ get_header() ?>
 
 		</article><!--.chassis-content-->
 
-	</div><!-- .col-sm-8 -->
+	</div><!-- .col-sm-9 -->
 
 		<aside= id="sidebar-widget" class="col-sm-4">
 

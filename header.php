@@ -42,23 +42,19 @@
 
 	<body <?php body_class( $classes ) ?>>
 
-		<header>
+		<header id="header-height">
 
 			<div id="navbar-sm">
 
 				<?php include( 'includes/navbar-sm.php' ); ?>
 
-			</div><!-- end navbar-sm -->
+			</div><!-- #navbar-sm -->
 
 			<div class="container-fluid no pad">
 
+				<div class="parallax" style="background-image: url( '<?php echo esc_url( the_field( 'main_background_image', 'option' ) ); ?>' )">
+
 				<?php do_action( 'hero' ); ?>
-
-				<div id="scroll">
-
-					<a href="#arrow"><img src="<?php the_field( 'chevron_img', 'option' ) ?>"></a>
-
-				</div><!-- end scroll -->
 
 			</div><!-- end container-fluid -->
 
@@ -66,9 +62,9 @@
 
 				<?php include( 'includes/navbar-lg.php' ); ?>
 
-			</div><!-- end navbar-lg -->
+			</div><!-- #navbar-lg -->
 
-		</header>
+		</header><!-- #header-height -->
 
 <div class="parallax" style="background-image: url( '<?php echo esc_url( the_field( 'main_background_image', 'option' ) ); ?>' )">
 

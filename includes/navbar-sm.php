@@ -24,7 +24,7 @@
 
 					<?php get_search_form(); ?>
 
-				</div><!-- end search form -->
+				</div><!-- .search form -->
 
 				<ul class="nav sidebar-nav">
 
@@ -45,7 +45,7 @@
 
 			<a href="http://localhost:3000/"><h1>Monkey's Uncle</h1></a>
 
-		</div><!-- end logo -->
+		</div><!-- .logo -->
 
 				<button type="button" class="hamburger is-closed" data-toggle="offcanvas">
 
@@ -61,4 +61,4 @@
 
 	</div>
 
-</div><!-- end small-nav -->
+</div><!-- .small-nav -->

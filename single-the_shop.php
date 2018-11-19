@@ -5,8 +5,6 @@
 
 include( 'partials/header2.php' ); ?>
 
-<div id="arrow"></div>
-
 	<div class="container sgl-shop-container">
 
 		<div class="col-sm-12">

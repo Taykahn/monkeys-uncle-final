@@ -30,18 +30,22 @@
 
 					</div><!-- end search form -->
 
-					<?php 
-						$args = array(
-						'menu'          => 'header-menu',
-						'menu_class'    => 'nav navbar-nav',
-						'container'     => 'false'
-					);
-						wp_nav_menu( $args );
-					?>
+					<div class="nav navbar-nav">
+
+						<?php 
+							$args = array(
+							'menu'          => 'header-menu',
+							'menu_class'    => 'nav navbar-nav',
+							'container'     => 'false'
+						);
+							wp_nav_menu( $args );
+						?>
+
+				</div><!-- .nav .navbar-nav -->
 
 				</div><!-- .col-sm-8 -->
 
-			</div><!--/.navbar-collapse -->
+			</div><!--.navbar-collapse -->
 
 		</div><!--.nav-banner -->
 

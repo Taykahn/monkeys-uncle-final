@@ -163,14 +163,3 @@
 		</header>
 
 	<div class="parallax" style="background-image: url( '<?php echo esc_url( the_field( 'main_background_image', 'option' ) ); ?>' )">
-
-
-
-
-
-
-
-
-
-
-

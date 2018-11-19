@@ -11,7 +11,7 @@ include( 'partials/header2.php' ); ?>
 
 	<div class="container single-container">
 
-		<div class="col-sm-8 single-col">
+		<div class="col-sm-9 single-col">
 
 			<div class="blog-content">
 
@@ -45,7 +45,7 @@ include( 'partials/header2.php' ); ?>
 
 			</div><!-- .content -->
 
-		</div><!-- .col-sm-8 -->
+		</div><!-- .col-sm-9 -->
 
 		<?php get_sidebar() ?>
 

@@ -15,11 +15,15 @@
 
 get_header(); ?>
 
-<div id="arrow"></div>
+<div id="page-title">
+
+	<h1>The Lift</h1>
+
+</div><!-- #page-title -->
 
 	<div class="container">
 
-			<div class="col-sm-8">
+			<div class="col-sm-9">
 
 				<div class="lift-page-title">
 
@@ -51,7 +55,7 @@ get_header(); ?>
 
 				</div><!-- end page-header -->
 
-			</div><!-- col-md-8 -->
+			</div><!-- col-md-9 -->
 
 			<?php get_sidebar(); ?>
 
